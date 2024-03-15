@@ -203,7 +203,7 @@ No other members need to be added to this class.
 
 - for `T = double`, the function `add()` should consider that two numbers are the same if their difference in the absolute value is smaller or equal to `0.01`.
 
-  When implementing this specialization, consider the function [std::fabs()](https://en.cppreference.com/w/cpp/numeric/math/fabs).
+  When implementing this specialization, consider the function [std::labs()](https://en.cppreference.com/w/cpp/numeric/math/labs).
 
 
 
