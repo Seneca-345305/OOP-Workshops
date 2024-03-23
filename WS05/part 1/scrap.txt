@@ -1,0 +1,6 @@
+        std::string m_author{};
+        std::string m_title{};
+        std::string m_country{};
+        unsigned short m_yearPublished{};
+        float m_price{};
+        std::string m_desc{};

@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/x64/ninja -G Ninja -S "/Users/tomasrochwerger/Library/CloudStorage/OneDrive-Seneca/Winter24/OOP345/OOP-Workshops/WS05/part 1" -B "/Users/tomasrochwerger/Library/CloudStorage/OneDrive-Seneca/Winter24/OOP345/OOP-Workshops/WS05/part 1/cmake-build-debug"
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/tomasrochwerger/Library/CloudStorage/OneDrive-Seneca/Winter24/OOP345/OOP-Workshops/WS05/part 1/cmake-build-debug

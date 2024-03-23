@@ -1,0 +1,43 @@
+// Name: Tomas Rochwerger
+// Student Number: 159432210
+// Seneca Email: trochwerger@myseneca.ca
+// Date of Completion: 02/04/2024
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+    We specialize the add() member function as with a collection
+    duplicates are permitted, whereas with the set class only
+    holds unique elements. We implement this specialization by
+    checking if the element is already in the set, returning
+    false if it is. If the item is not in the set yet, we add it
+    to the set and return true.
+
+    We define the class variable outside the class as it is a
+    static member of the class, meaning it is shared by all
+    instances of the class. m_dummy is available among all
+    objects of the class and its lifetime is the same as the
+    program.
+
+    For this workshop, we were instructed to not split our "Set"
+    and "Collection" modules into header and source files, but to
+    include the definition and implementation of the class within
+    the same file. This was done since we were dealing with
+    template classes. When working with template classes, the
+    templates are more so blueprints for creating
+    classes/functions more so then actual classes/functions
+    themselves. We cannot split up the modules as the compiler
+    requires both the definitions and implementations when
+    generating the classes/functions at compile time.
+
+    The Set<T>contains() function returns a bool if an element exist in the set.
+    The function is used in the add() function, if the item exist in the set,
+    the function will return true and the add() function skips adding the
+    item and returns false. If the element does not exist in the set, the
+    contains() function returns false, and the add() function adds the item
+    to the set and returns true. I also added a specialization for the
+    Set<double>contains which compares the double values with a tolerance.
+
+    I also added a checkSpace() function to check if the collection is full, which
+    returns false if the collection is full and true if there is still space to add
+    elements to the collection.
+
+

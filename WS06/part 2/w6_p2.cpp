@@ -1,3 +1,9 @@
+// Name: Tomas Rochwerger
+// Student Number: 159432210
+// Seneca Email: trochwerger@myseneca.ca
+// Date of Completion: 03/10/2024
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -17,15 +23,22 @@ void loadData(const char* filename, seneca::College& theCollege)
 		return;
 	}
 	seneca::Person* thePerson = nullptr;
-	while (file)
-	{
-		// TODO: This code can throw errors to signal that something 
-		//         went wrong while extracting data. Write code to catch
-		//         and handle the exceptions:
-		thePerson = seneca::buildInstance(file);
-		if (thePerson)
-			theCollege += thePerson;
-	}
+	while (file) {
+        // TODO: This code can throw errors to signal that something
+        //         went wrong while extracting data. Write code to catch
+        //         and handle the exceptions:
+        try {
+            thePerson = seneca::buildInstance(file);
+            if (thePerson)
+                theCollege += thePerson;
+        }
+        catch (const std::string &err) {
+            std::cout << err << std::endl;
+        }
+        catch (...) {
+            std::cout << "Unknown error!" << std::endl;
+        }
+    }
 }
 
 
@@ -45,7 +58,9 @@ int main(int argc, char** argv)
 	{
 		// TODO: Create a lambda expression that receives as parameter `const seneca::Person*`
 		//         and returns true if the person is student.
-		auto students = ...;
+		auto students = [](const seneca::Person* person) {
+            return person->status() == "Student";
+        };
 		theCollege.select(students, persons);
 	
 		std::cout << "|                                        Test #3 Students in the college!                                              |\n";
@@ -62,7 +77,9 @@ int main(int argc, char** argv)
 	{
 		// TODO: Create a lambda expression that receives as parameter `const seneca::Person*`
 		//         and returns true if the person is professor.
-		auto professors = ... ;
+		auto professors = [](const seneca::Person* person) {
+            return person->status() == "Professor";
+        };
 		theCollege.select(professors, persons);
 	
 		std::cout << "|                                        Test #4 Professors in the college!                                            |\n";

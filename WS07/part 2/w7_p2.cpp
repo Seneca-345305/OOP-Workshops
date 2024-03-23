@@ -1,3 +1,11 @@
+// Name: Tomas Rochwerger
+// Seneca Student ID: 159432210
+// Seneca email: trochwerger@myseneca.ca
+// Date of completion: 03/16/2024
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -71,6 +79,6 @@ int main(int argc, char** argv)
 			printbar();
 		}
 	}
-	
+
 	return cout;
 }

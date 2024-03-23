@@ -1,0 +1,58 @@
+Name: Tomas Rochwerger
+Student Number: 159432210
+Seneca Email: trochwerger@myseneca.ca
+Date of Completion: 01/29/2024
+I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments. This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+Reflection
+1.
+After compilation, the output displays the time difference between the copy and move operations. The copy constructors take significantly longer than the move constructors, demonstrating the efficiency of move operations. Move operations are faster than copy operations because they do not need to allocate memory for the new object. Instead, they can simply take the memory from the old object and leave the old object in a valid but unspecified state. The move operator
+only performs a copying of the address. The move constructor simply moves the pointer to the new object, leaving the old object in a valid but unspecified state. The copy constructor, on the other hand, must allocate memory for the new object and then copy the contents of the old object into the new object.
+
+Code Examples:
+Copy Operator:
+
+StringSet &StringSet::operator=(const StringSet &src) {
+        // Copy assignment operator
+        if(this != &src){
+            // Checking if the current object has any strings
+            if(this->m_strings){
+                delete[] m_strings;
+                m_strings = {};
+            }
+
+            // Copying from src to current object
+            this->m_stringCounter = src.m_stringCounter;
+            this->m_strings = new std::string[m_stringCounter];
+
+            for(size_t i = 0 ; i < m_stringCounter; ++i){
+                this->m_strings[i] = src.m_strings[i];
+            }
+        }
+        return *this;
+    }
+
+    Move Operator:
+
+    StringSet &StringSet::operator=(StringSet &&src) {
+            // Move assignment operator
+            if(this != &src){
+                if(this->m_strings){
+                    delete[] m_strings;
+                    m_strings = {};
+                }
+                // Moving from src to current object
+                this->m_stringCounter = src.m_stringCounter;
+                src.m_stringCounter = {};
+                this->m_strings = src.m_strings;
+                src.m_strings = {};
+            }
+            return *this;
+        }
+
+2.
+When the file is read, the number of strings in the file is counted and stored in m_stringCounter so that we know how much memory to allocate. The file is then
+reset and the strings are read into the dynamic array. The file's reset and read again to populate the dynamic array, resulting in inefficiencies as the file has
+to be read twice. To improve efficiency, we could possibly utilize move operators to move the strings from the temporary array to the dynamic array.
+
+3. The difference between steady_clock and system_clock is that system_clock may not be monotonic whereas steady_clock is. With system_clock, the system time can be adjusted causing it to move forwards or backwards. Steady_clock cannot decrease as physical time only moves forward and the time between clicks is constant.

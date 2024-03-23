@@ -1,0 +1,81 @@
+// Name: Tomas Rochwerger
+// Seneca Student ID: 159432210
+// Seneca email: trochwerger@myseneca.ca
+// Date of completion: 03/17/2024
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
+The following STL functions were used in my SongCollection module:
+
+std::stoi and std::stod: These were used to convert strings to integers and doubles respectively.
+std::optional and std::nullopt: These were used for handling missing or empty fields in the data.
+std::accumulate: Used to calculate the total playtime of all songs. Using std::accumuate, we were able to sum the length of all songs in the collection.
+        auto totalLength = std::accumulate(m_song.begin(), m_song.end(), 0, [](unsigned int total, const Song& song) {
+            return total + song.m_length;
+        });
+        out << std::setw(2) << totalLength / 3600 << ":"
+            << std::setw(2) << (totalLength % 3600) / 60 << ":"
+            << std::setw(2) << totalLength % 60;
+        out << " |" << std::endl;
+
+std::sort: Used to sort the songs based on a specified field. It allowed us to pass a custom comparator to sort the songs based on a specified field.
+    void SongCollection::sort(const std::string &field) {
+        if (field == "title") {
+            std::sort(m_song.begin(), m_song.end(), [](const Song& a, const Song& b) {
+                return a.m_title < b.m_title;
+            });
+        } else if (field == "album") {
+            std::sort(m_song.begin(), m_song.end(), [](const Song& a, const Song& b) {
+                return a.m_album < b.m_album;
+            });
+        } else if (field == "length") {
+            std::sort(m_song.begin(), m_song.end(), [](const Song& a, const Song& b) {
+                return a.m_length < b.m_length;
+            });
+        }
+    }
+
+std::transform: Removing the token [None] from the album field of the songs based on condition. I passed a reference to a song object and used a lambda function to check if the album is [None] and replace it with an empty string.
+
+    void SongCollection::cleanAlbum() {
+        std::transform(m_song.begin(), m_song.end(), m_song.begin(), [](Song& song) {
+            if (song.m_album == "[None]") {
+                song.m_album = " ";
+            }
+            return song;
+        });
+
+    }
+
+std::any_of: Iterates through the collection and checks if any of the songs are by the specified artist. It returns true if any of the songs are by the specified artist, otherwise it returns false.
+
+    bool SongCollection::inCollection(const std::string &artist) const {
+         return std::any_of(m_song.begin(), m_song.end(), [&](const Song &song) {
+            return (song.m_artist == artist);
+        });
+    }
+
+std::copy_if: This is create a new collection with copies of the songs that are by the specified artist. It iterates through the collection and copies the songs that are by the specified artist to the new collection.
+    std::list<Song> SongCollection::getSongsForArtist(const std::string &artist) const {
+std::list<Song> songs;
+        std::copy_if(m_song.begin(), m_song.end(), std::back_inserter(songs), [&](const Song& song) {
+            return song.m_artist == artist;
+        });
+        return songs;
+    }
+
+  STL (Standard Template Library) algorithms provide several advantages over implementing the functionality manually using loops. STL algorithms have been implemented by professionals intending to make coding more straightforward and optimized. They are highly tested, ensuring they are likely to be more efficient than a custom implementation. Using STL algorithms improve code readability. Instead of having to parse through loop logic, someone reading your code can see the algorithm name and immediately understand what the code is doing. Also, STL algorithms are generic and can work with different data types and containers. This makes them highly reusable across different parts of your codebase.
+  Standardization: Finally, Using STL algorithms can greatly increase your productivity as a developer. Instead of spending time implementing and debugging algorithms (reinventing the wheel), you can focus on the higher-level logic of your application.
+
+  We can prevent errors caused by invalid fields passed to the collection sorting function by defining an enumerated type for the fields that can be sorted. This way, the compiler verifies the compatibility of the field passed to the sort function.
+
+  namespace seneca {
+      enum class SortField {
+          TITLE,
+          ALBUM,
+          LENGTH
+      };
+  }
+
+The client would have to pass a SortField value to the sort function, if the field is invalid, the compiler would catch it.

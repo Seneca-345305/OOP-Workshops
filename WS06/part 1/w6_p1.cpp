@@ -10,22 +10,23 @@ int cout = 0; // won't compile if headers don't follow convention regarding name
 
 void loadData(const char* filename, seneca::College& theCollege)
 {
-	std::ifstream file(filename);
-	if (!file)
-	{
-		std::cerr << "ERROR: Cannot open file [" << filename << "].\n";
-		return;
-	}
-	seneca::Person* thePerson = nullptr;
-	while (file)
-	{
-		// TODO: This code can throw errors to signal that something 
-		//         went wrong while extracting data. Write code to catch
-		//         and handle the exceptions.
-		thePerson = seneca::buildInstance(file);
-		if (thePerson)
-			theCollege += thePerson;
-	}
+    std::ifstream file(filename);
+    if (!file)
+    {
+        std::cerr << "ERROR: Cannot open file [" << filename << "].\n";
+        return;
+    }
+    seneca::Person* thePerson = nullptr;
+    while(file) {
+        try {
+            thePerson = seneca::buildInstance(file);
+            if (thePerson)
+                theCollege += thePerson;
+        }
+        catch (const std::string &e) {
+            std::cout << e << '\n';
+        }
+    }
 }
 
 

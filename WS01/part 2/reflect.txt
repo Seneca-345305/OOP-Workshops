@@ -1,0 +1,21 @@
+/*****
+ * OOP345-NAA Workshop 1 Part 2
+ * Name: Tomas Rochwerger
+ * Student Number: 159432210
+ * Date: 01/22/2023
+ *  I declare that this assignment is my own work in accordance with Seneca Academic Policy.
+ *  No part of this assignment has been copied manually or electronically from any other source
+ *  or distributed to other students.
+ * */
+
+
+    The difference between internal and external linkage citing examples from your code.
+    The difference between internal and external linkage is that internal linkage is connected between different scopes of the same module, whereas external linkage is connected between different scopes in different modules. External linkage was used in event.h when we declare (*note, not define) the variable g_sysClock. This variable is declared in the global scope and can be accessed in any module.
+
+    Static variables are variables that the compiler can understand without any link or run-time knowledge. These are stored in what is known as statically allocated memory which is known at compile time. They are useful when you know the exact sizes of the variables that you are using. In part 1 of the lab, we were instructed that the maximum size of the description char array was 128, and we can set a const static variable to store this value which has to be known at compile time or the program will not compile.
+
+
+    the changes that you made in upgrading your Event class.
+
+    When upgrading our class, we implemented the copy constructor and copy assignment operator overload. This allowed us to use a private member char* to store a description of unknown length using dynamic memory allocation and deallocation. This is know as dynamically allocated memory which is allocated at run time. All dynamic member variables are deallocated in the constructor when the object is destroyed.
+

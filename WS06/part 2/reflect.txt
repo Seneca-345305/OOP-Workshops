@@ -1,0 +1,52 @@
+// Name: Tomas Rochwerger
+// Student Number: 159432210
+// Seneca Email: trochwerger@myseneca.ca
+// Date of Completion: 03/10/2024
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+
+In this workshop, we dynamically allocate memory for people in the college (std::vector<Person*> m_persons) in our buildInstance function to create employees, students, or professors. After our m_persons object is no longer needed, me must deallocate the memory using delete to avoid memory leaks. We deallocate the memory in the College destructor:
+
+College::~College() {
+    for (auto& person : m_persons) {
+        delete person;
+    }
+}
+
+We iterate over each person in m_persons and delete the memory allocated for each person, ensuring no memory leaks occur.
+
+The loadData() function can detect errors by checking the return value of the buildInstance function. If buildInstance returns nullptr, it means that the record represents an unknown type of person. If buildInstance throws an exception, it means that the record contains invalid data. We can modify the buildInstance and loadData functions to use exceptions for error handling.  In the buildInstance function, we can throw exceptions when the record represents an unknown type of person or contains invalid data.  In the loadData function, we can use a try-catch block to handle these exceptions.
+
+Person* buildInstance(std::istream& in) {
+    char ch = '\0';
+    std::string line;
+
+    std::getline(in, line);
+    std::istringstream iss(line);
+    ch = line[0];
+
+    if (ch == 'e' || ch == 'E') {
+        return new Employee(iss);
+    }
+    else if (ch == 's' || ch == 'S') {
+        return new Student(iss);
+    }
+    else if (ch == 'p' || ch == 'P') {
+        return new Professor(iss);
+    }
+
+    throw std::runtime_error("Unknown type of person");
+}
+
+void loadData(std::istream& in) {
+    while (in) {
+        try {
+            auto person = buildInstance(in);
+            m_persons.push_back(person);
+        } catch (const std::runtime_error& e) {
+            std::cerr << "Error: " << e.what() << '\n';
+        }
+    }
+}
+
+In this workshop, it's necessary to use std::list<seneca::Person*> and std::vector<seneca::Person*> instead of std::list<seneca::Person> and std::vector<seneca::Person> due to preserve the data and behavior specific to the derived classes (Employee, Student, and Professor), it's necessary to store pointers to the Person objects in the std::list and std::vector. Person is a base class, with Employee, Student, and Professor being derived classes. If we try to store an object of a derived class in a container of the base class type, the object loses the parts of the object that are specific to the derived class, only storing the base class part of the object. Storing a pointer to an object of a derived class in a container of base class pointers preserves the whole object, including the parts specific to the derived class. This allows us to use polymorphism, where a base class pointer can point to objects of any class derived from the base class, correctly calling the member functions of the derived class.

@@ -1,0 +1,3 @@
+/Users/tomaspc/Library/CloudStorage/OneDrive-Seneca/Winter24/OOP345/OOP-Workshops/WS05/part 2/cmake-build-debug/CMakeFiles/part_2.dir
+/Users/tomaspc/Library/CloudStorage/OneDrive-Seneca/Winter24/OOP345/OOP-Workshops/WS05/part 2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tomaspc/Library/CloudStorage/OneDrive-Seneca/Winter24/OOP345/OOP-Workshops/WS05/part 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

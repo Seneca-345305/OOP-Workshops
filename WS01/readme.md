@@ -65,9 +65,9 @@ To check the output, use a program that can compare text files.  Search online f
 
 The application tracks events that occur at given times in a day, and executes a set of actions on the current event.
 
-The application maintains a system clock (representing the time of day), then loads from a file the actions that must be executed:
-- `T` - *time*: all following actions must be executed (in sequence) when the system clock reaches the time following `T`
-- `S` - *start*: at the current time, a new event starts; the name of the event follows `S`
+The application maintains a system clock (representing the m_time of day), then loads from a file the actions that must be executed:
+- `T` - *m_time*: all following actions must be executed (in sequence) when the system clock reaches the m_time following `T`
+- `S` - *start*: at the current m_time, a new event starts; the name of the event follows `S`
 - `E` - *end*: the current event has ended and no other event is happening right now
 - `P` - *print*: display the current event to the screen
 - `A` - *archive*: add the current event to an archive of current events for future reference.
@@ -104,7 +104,7 @@ Finish the implementation of the `main` function, by completing the parts marked
 
 ### `Event` Module
 
-The `Event` module defines a system clock, as a global variable named `g_sysClock` that stores only positive integers.  The value of the clock represents the time of day as the number of seconds since midnight (an integer between 0 and 86400; choose an appropriate type). This clock will be accessed when a new event starts and from the `main` function.
+The `Event` module defines a system clock, as a global variable named `g_sysClock` that stores only positive integers.  The value of the clock represents the m_time of day as the number of seconds since midnight (an integer between 0 and 86400; choose an appropriate type). This clock will be accessed when a new event starts and from the `main` function.
 
 
 
@@ -112,7 +112,7 @@ This module also defines a class named `Event` in the namespace `seneca` that st
 
 - a C-style null-terminated string of up to 128 characters *including the null byte terminator* representing the description of the event.
 
-- the time when the event starts, expressed in number of seconds that passed from midnight. The time must be an integer between 0 and 86400 (choose an appropriate type).
+- the m_time when the event starts, expressed in number of seconds that passed from midnight. The m_time must be an integer between 0 and 86400 (choose an appropriate type).
 
 **Public Members**
 - Default constructor
@@ -126,7 +126,7 @@ This module also defines a class named `Event` in the namespace `seneca` that st
     ```
     where
     - `COUNTER` is a field of size 2, that holds the number of times that this function has been called (use a local-to-function variable that remains in memory for the lifetime of the program) **Do not use global/member variables to store the counter!**
-    - `HH:MM:SS` represents the time when the event started, expressed in hours, minutes and seconds
+    - `HH:MM:SS` represents the m_time when the event started, expressed in hours, minutes and seconds
 - `set()`: a modifier that receives the address of an array of characters (by default, the parameter is null).
     - If the address is not null and the array is not empty, this function starts a new event and stores the information about this event in the current instance.
     - If the address is null or the array is empty, this function resets the current instance to an empty state.
@@ -183,7 +183,7 @@ the output should look like the one from the `sample_output.txt` file.
 
 ### Reflection
 
-Study your final solution, reread the related parts of the course notes, and make sure that you have understood the concepts covered by this workshop. **This should take no less than 30 minutes of your time and the result is suggested to be at least 150 words in length.**
+Study your final solution, reread the related parts of the course notes, and make sure that you have understood the concepts covered by this workshop. **This should take no less than 30 minutes of your m_time and the result is suggested to be at least 150 words in length.**
 
 Create a **text** file named `reflect.txt` that contains your ***detailed*** description of the topics that you have learned in completing this workshop and mention any issues that caused you difficulty and how you solved them. Include in your explanation—**but do not limit it to**—the following points:
 - the difference between internal and external linkage citing examples from your code

@@ -1,0 +1,34 @@
+// Name: Tomas Rochwerger
+// Student Number: 159432210
+// Seneca Email: trochwerger@myseneca.ca
+// Date of Completion: 2024-02-09
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+Reflection - Tomas Rochwerger
+
+The difference between composition and aggregation lies in the ownership and lifetime of the associated objects. In composition, the composed object owns the lifetime of its components, meaning when the composed object is destroyed, so are its components. In the Child class, it owns an array of Toy objects, and when a Child object is destroyed, the Toy objects it owns are also destroyed. This is composition.  In contrast, aggregation does not involve ownership. The aggregated object does not control the lifetime of the objects it's associated with. In the ConfirmOrder class, it holds pointers to Toy objects, but it does not own these objects. When a ConfirmOrder object is destroyed, the Toy objects it points to are not destroyed. This is aggregation.
+
+In the context of move and copy operations, for a class that uses composition (like Child), the copy constructor and copy assignment operator need to perform a deep copy of the owned objects, because each Child object owns its own distinct set of Toy objects. The move constructor and move assignment operator transfer ownership of the Toy objects from the source Child to the target Child.  For a class that uses aggregation (like ConfirmOrder), the copy constructor and copy assignment operator can perform a shallow copy of the pointers, because the Toy objects are shared among ConfirmOrder objects. The move constructor and move assignment operator simply transfer the pointers from the source ConfirmOrder to the target ConfirmOrder, without affecting the Toy objects they point to.
+
+The Child class has a composition relationship with the Toy class, because it owns an array of Toy objects. The lifetime of these Toy objects is tied to the Child object that owns them. The Child class also has a composition relationship with the array of pointers, because it owns the array. When a Child object is destroyed, the array is also destroyed.
+
+The ConfirmOrder class has an aggregation relationship with the Toy class, because it holds pointers to Toy objects but does not own them. The Toy objects can exist independently of the ConfirmOrder objects that point to them. The ConfirmOrder class has a composition relationship with the array of pointers, because it owns the array. When a ConfirmOrder object is destroyed, the array is destroyed, but the Toy objects that the pointers in the array point to are not destroyed.
+
+Examples of composition in my code:
+    class Child {
+        const Toy** m_toys;
+   };
+Child owns an array of Toy objects, it creates and manages its lifespan.
+
+Examples of aggregation in my code:
+    class ConfirmOrder {
+        const Toy** m_toys;
+    };
+Confirm order only holds references to the toy class without ownership.
+
+Examples of Assosiation in my code:
+    class ConfirmOrder {
+        ConfirmOrder& operator+=(const Toy& toy);
+        ConfirmOrder& operator-=(const Toy& toy);
+    };
+ ConfirmOrder uses the toy class but has no ownership.
