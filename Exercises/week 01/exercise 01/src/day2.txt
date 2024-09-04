@@ -1,0 +1,6 @@
+I,Ellen,12 Piece Sushi Set,10.99,Y
+D,Khalid,Lobster Fried Rice,12.99,N
+D,Monica,Reuben Sandwich,8.59,Y
+I,Mikhail,Egg Salad Wrap,5.49,N
+I,Katarina,Pepperoni Pizza Slice,5.99,Y
+I,
