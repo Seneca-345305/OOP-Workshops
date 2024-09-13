@@ -1,0 +1,114 @@
+Command Line:
+------------------------------------------------------
+  1: ws
+  2: english_large.csv
+  3: english_small.csv
+------------------------------------------------------
+
+T1: Search for some words
+==========:==========:==========:==========:==========
+Computer - (noun) One who computes.
+
+Zigzag - (noun) Something that has short turns or angles.
+       - (noun) "A molding running in a zigzag line; a chevron, or series of chevrons.  See Illust. of Chevron, 3."
+       - (noun) See Boyau.
+       - (adjective) "Having short, sharp turns; running this way and that in an onward course."
+       - (verb) To form with short turns.
+       - (verb) "To move in a zigzag manner; also, to have a zigzag shape."
+
+Apple - (noun) The fleshy pome or fruit of a rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate zones.
+      - (noun) Any tree genus Pyrus which has the stalk sunken into the base of the fruit; an apple tree.
+      - (noun) "Any fruit or other vegetable production resembling, or supposed to resemble, the apple; as, apple of love, or love apple (a tomato), balsam apple, egg apple, oak apple."
+      - (noun) "Anything round like an apple; as, an apple of gold."
+      - (verb) To grow like an apple; to bear apples.
+
+Germanize - (verb) "To make German, or like what is distinctively German; as, to Germanize a province, a language, a society."
+          - (verb) To reason or write after the manner of the Germans.
+
+Passport - (noun) "Permission to pass; a document given by the competent officer of a state, permitting the person therein named to pass or travel from place to place, without molestation, by land or by water."
+         - (noun) "A document carried by neutral merchant vessels in time of war, to certify their nationality and protect them from belligerents; a sea letter."
+         - (noun) A license granted in time of war for the removal of persons and effects from a hostile country; a safe-conduct.
+         - (noun) Figuratively: Anything which secures advancement and general acceptance.
+
+Gone - of Go
+     - p. p. of Go.
+
+Word 'Laptop' was not found in the dictionary.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T2: Copy Constructor
+==========:==========:==========:==========:==========
+Apple - The fleshy pome or fruit of a rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate zones.
+Ywis - Certainly; most likely; truly; probably.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T3: Copy Assignment Operator
+==========:==========:==========:==========:==========
+Efficience - Alt. of Efficiency
+Apple - The fleshy pome or fruit of a rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate zones.
+Ywis - Certainly; most likely; truly; probably.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T4: Move Constructor
+==========:==========:==========:==========:==========
+Word 'Apple' was not found in the dictionary.
+Ywis - Certainly; most likely; truly; probably.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T5: Move Assignment Operator
+==========:==========:==========:==========:==========
+Efficience - Alt. of Efficiency
+Word 'Apple' was not found in the dictionary.
+Ywis - Certainly; most likely; truly; probably.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T6: Search Time Measurements
+==========:==========:==========:==========:==========
+Apple - The fleshy pome or fruit of a rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate zones.
+Apple - The fleshy pome or fruit of a rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate zones.
+      - Any tree genus Pyrus which has the stalk sunken into the base of the fruit; an apple tree.
+      - "Any fruit or other vegetable production resembling, or supposed to resemble, the apple; as, apple of love, or love apple (a tomato), balsam apple, egg apple, oak apple."
+      - "Anything round like an apple; as, an apple of gold."
+      - To grow like an apple; to bear apples.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ 1:                      Default Constructor ->       12200 nanoseconds
+ 2:                       Custom Constructor ->   158232495 nanoseconds
+ 3:                         Copy Constructor ->    35367144 nanoseconds
+ 4:                 Copy Assignment Operator ->    31905740 nanoseconds
+ 5:                         Move Constructor ->        1700 nanoseconds
+ 6:                 Move Assignment Operator ->       32400 nanoseconds
+ 7:                               Destructor ->     9821812 nanoseconds
+ 8:      Search for a word (first occurence) ->      134800 nanoseconds
+ 9:       Search for a word (all occurences) ->     3394004 nanoseconds
+
+10:                      Default Constructor ->       12 microseconds
+11:                       Custom Constructor ->   158232 microseconds
+12:                         Copy Constructor ->    35367 microseconds
+13:                 Copy Assignment Operator ->    31905 microseconds
+14:                         Move Constructor ->        1 microseconds
+15:                 Move Assignment Operator ->       32 microseconds
+16:                               Destructor ->     9821 microseconds
+17:      Search for a word (first occurence) ->      134 microseconds
+18:       Search for a word (all occurences) ->     3394 microseconds
+
+19:                      Default Constructor ->     0 milliseconds
+20:                       Custom Constructor ->   158 milliseconds
+21:                         Copy Constructor ->    35 milliseconds
+22:                 Copy Assignment Operator ->    31 milliseconds
+23:                         Move Constructor ->     0 milliseconds
+24:                 Move Assignment Operator ->     0 milliseconds
+25:                               Destructor ->     9 milliseconds
+26:      Search for a word (first occurence) ->     0 milliseconds
+27:       Search for a word (all occurences) ->     3 milliseconds
+
+28:                      Default Constructor ->  0 seconds
+29:                       Custom Constructor ->  0 seconds
+30:                         Copy Constructor ->  0 seconds
+31:                 Copy Assignment Operator ->  0 seconds
+32:                         Move Constructor ->  0 seconds
+33:                 Move Assignment Operator ->  0 seconds
+34:                               Destructor ->  0 seconds
+35:      Search for a word (first occurence) ->  0 seconds
+36:       Search for a word (all occurences) ->  0 seconds
