@@ -1,0 +1,116 @@
+Command Line:
+--------------------------
+  1: ws
+--------------------------
+
+>>>  T1: Testing the Collection of Integers
+==========:==========:==========:==========:==========
+Collection size: [7]
+----------------------
+| Collection Content |
+----------------------
+16
+12
+9
+3
+21
+12
+23
+----------------------
+Item [0]: 16
+Item [5]: 12
+Item [9]: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T2: Testing the Set of Integers
+==========:==========:==========:==========:==========
+Set size: [6]
+----------------------
+| Collection Content |
+----------------------
+16
+12
+9
+3
+21
+23
+----------------------
+Item [0]: 16
+Item [5]: 23
+Item [9]: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T3: Testing the Collection of Floats
+==========:==========:==========:==========:==========
+Collection size: [6]
+----------------------
+| Collection Content |
+----------------------
+1.222
+5.777
+1.223
+51.333
+8.888
+1.221
+----------------------
+Item [0]: 1.222
+Item [5]: 1.221
+Item [9]: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T4: Testing the Set of Floats
+==========:==========:==========:==========:==========
+Set size: [4]
+----------------------
+| Collection Content |
+----------------------
+1.222
+5.777
+51.333
+8.888
+----------------------
+Item [0]: 1.222
+Item [5]: 0
+Item [9]: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T5: Testing the Collection of Pairs
+==========:==========:==========:==========:==========
+Collection size: [9]
+----------------------
+| Collection Content |
+----------------------
+       static memory: memory allocated during the compilation time
+          programmer: a person who writes code
+      dynamic memory: memory allocated during the runtime
+   client of a class: a piece of code that uses the class
+      dynamic memory: memory allocated with 'new' operator
+                user: a person who runs and interracts with the program
+               array: a contiguous block of memory storing multiple objects
+client of a function: a piece of code that uses the function
+                user: Just John!
+----------------------
+Item [0]: [static memory][memory allocated during the compilation time]
+Item [8]: [user][Just John!]
+Item [9]: [][]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T6: Testing the Set of Pairs
+==========:==========:==========:==========:==========
+Set size: [7]
+----------------------
+| Collection Content |
+----------------------
+       static memory: memory allocated during the compilation time
+          programmer: a person who writes code
+      dynamic memory: memory allocated during the runtime
+   client of a class: a piece of code that uses the class
+                user: a person who runs and interracts with the program
+               array: a contiguous block of memory storing multiple objects
+client of a function: a piece of code that uses the function
+----------------------
+Item [1]: [programmer][a person who writes code]
+Item [4]: [user][a person who runs and interracts with the program]
+Item [11]: [No Key][No Value]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
