@@ -63,7 +63,7 @@ In all classes that you create, you are allowed to add any **private** members t
 
 
 
-### `w3` Module (supplied)
+### `tester` Module (supplied)
 
 
 **Do not modify this module!**  Look at the code and make sure you understand how to instantiate a templated class.
