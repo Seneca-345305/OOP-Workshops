@@ -1,0 +1,516 @@
+Command Line:
+------------------------------------------------------
+  1: ws
+------------------------------------------------------
+
+T1: Building the Teams of Characters
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 100% ( 950/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health: 100% ( 800/ 800)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health: 100% (1000/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Team] The King's Guard
+    1: Ghost Blade             Health:   5% (   1/  20)  Attack:   35  Defense:    1
+    2: Nova Burst              Health: 100% (1234/1234)  Attack:  195  Defense:  147
+    3: Kill Switch             Health: 100% (2000/2000)  Attack:  288  Defense:   80
+    4: Mercy Less              Health: 100% (1200/1200)  Attack:  102  Defense:    8
+    5: Flame Princess          Health: 100% ( 100/ 100)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T2: Increased Health for Guild Members
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 100% ( 950/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1300/1300)  Attack:  260  Defense:  133
+    4: Master Chief            Health: 100% (1000/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Guild] Spartans
+    1: Lethal Bunny            Health: 100% (1300/1300)  Attack:  260  Defense:  133
+    2: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    3: Flame Princess          Health: 100% ( 400/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T3: One Guild Member Leaves Guild
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 100% ( 950/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health: 100% (1000/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Guild] Spartans
+    1: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health: 100% ( 400/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T4: Check Copy Constructor in Team
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 100% ( 950/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health: 100% (1000/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T5: Check Copy Assignment Operator in Team
+==========:==========:==========:==========:==========
+[Team] The Procrastinators
+    1: Quick Silver            Health: 100% ( 950/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health: 100% (1000/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Team] The King's Guard
+    1: Ghost Blade             Health:   5% (   1/  20)  Attack:   35  Defense:    1
+    2: Nova Burst              Health: 100% (1234/1234)  Attack:  195  Defense:  147
+    3: Kill Switch             Health: 100% (2000/2000)  Attack:  288  Defense:   80
+    4: Mercy Less              Health: 100% (1200/1200)  Attack:  102  Defense:    8
+    5: Flame Princess          Health: 100% ( 400/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T6: Check the Move Operations in Team
+==========:==========:==========:==========:==========
+No team.
+[Team] The Procrastinators
+    1: Quick Silver            Health: 100% ( 950/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health: 100% (1000/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+[Team] The Procrastinators
+    1: Quick Silver            Health: 100% ( 950/ 950)  Attack:   58  Defense:   77
+    2: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    3: Lethal Bunny            Health: 100% (1000/1000)  Attack:  260  Defense:  133
+    4: Master Chief            Health: 100% (1000/1000)  Attack:  121  Defense:   10
+    5: Mecha Doom              Health:   1% (   1/ 100)  Attack:   55  Defense:    0
+No team.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T7: Check Copy Constructor in Guild
+==========:==========:==========:==========:==========
+[Guild] Spartans
+    1: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health: 100% ( 400/ 400)  Attack:  120  Defense:  100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T8: Check Copy Assignment Operator in Guild
+==========:==========:==========:==========:==========
+[Guild] Spartans
+    1: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health: 100% ( 400/ 400)  Attack:  120  Defense:  100
+[Guild] Syndicate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T9: Check the Move Operations in Guild
+==========:==========:==========:==========:==========
+No guild.
+[Guild] Spartans
+    1: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health: 100% ( 400/ 400)  Attack:  120  Defense:  100
+[Guild] Spartans
+    1: Rogue Ronin             Health: 100% (1100/1100)  Attack:   75  Defense:   50
+    2: Flame Princess          Health: 100% ( 400/ 400)  Attack:  120  Defense:  100
+No guild.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T10: Epic battle between Master Chief and Mercy Less
+==========:==========:==========:==========:==========
+[Round 1]
+Master Chief is attacking Mercy Less.
+    Bersek is activated for the next 6 seconds. Cooldown is 10 seconds.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 966 health remaining.
+Mercy Less is attacking Master Chief.
+    Heal is activated; setting health at [1200].
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Bersek is active; reducing damage received from [92] to [46].
+    Master Chief took 46 damage, 954 health remaining.
+---
+Master Chief            Health:  95% ( 954/1000)  Attack:  121  Defense:   10
+Mercy Less              Health: 100% (1200/1200)  Attack:  102  Defense:    8
+---
+
+[Round 2]
+Master Chief is attacking Mercy Less.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 966 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Bersek is active; reducing damage received from [92] to [46].
+    Master Chief took 46 damage, 908 health remaining.
+---
+Master Chief            Health:  90% ( 908/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  80% ( 966/1200)  Attack:  102  Defense:    8
+---
+
+[Round 3]
+Master Chief is attacking Mercy Less.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 732 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 816 health remaining.
+---
+Master Chief            Health:  81% ( 816/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  61% ( 732/1200)  Attack:  102  Defense:    8
+---
+
+[Round 4]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 619 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 724 health remaining.
+---
+Master Chief            Health:  72% ( 724/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  51% ( 619/1200)  Attack:  102  Defense:    8
+---
+
+[Round 5]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 506 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 632 health remaining.
+---
+Master Chief            Health:  63% ( 632/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  42% ( 506/1200)  Attack:  102  Defense:    8
+---
+
+[Round 6]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 393 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 540 health remaining.
+---
+Master Chief            Health:  54% ( 540/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  32% ( 393/1200)  Attack:  102  Defense:    8
+---
+
+[Round 7]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 280 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 448 health remaining.
+---
+Master Chief            Health:  44% ( 448/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  23% ( 280/1200)  Attack:  102  Defense:    8
+---
+
+[Round 8]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 167 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 356 health remaining.
+---
+Master Chief            Health:  35% ( 356/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  13% ( 167/1200)  Attack:  102  Defense:    8
+---
+
+[Round 9]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 54 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 264 health remaining.
+---
+Master Chief            Health:  26% ( 264/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:   4% (  54/1200)  Attack:  102  Defense:    8
+---
+
+[Round 10]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less has been defeated!
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 172 health remaining.
+---
+Master Chief            Health:  17% ( 172/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:   0% (   0/1200)  Attack:  102  Defense:    8
+---
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+T11: Epic battle between Master Chief and Mercy Less
+==========:==========:==========:==========:==========
+[Round 1]
+Master Chief is attacking Mercy Less.
+    Bersek is activated for the next 6 seconds. Cooldown is 10 seconds.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 1266 health remaining.
+Mercy Less is attacking Master Chief.
+    Heal is activated; setting health at [1500].
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Bersek is active; reducing damage received from [92] to [46].
+    Master Chief took 46 damage, 954 health remaining.
+---
+Master Chief            Health:  95% ( 954/1000)  Attack:  121  Defense:   10
+Mercy Less              Health: 100% (1500/1500)  Attack:  102  Defense:    8
+---
+
+[Round 2]
+Master Chief is attacking Mercy Less.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 1266 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Bersek is active; reducing damage received from [92] to [46].
+    Master Chief took 46 damage, 908 health remaining.
+---
+Master Chief            Health:  90% ( 908/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  84% (1266/1500)  Attack:  102  Defense:    8
+---
+
+[Round 3]
+Master Chief is attacking Mercy Less.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 1032 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 816 health remaining.
+---
+Master Chief            Health:  81% ( 816/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  68% (1032/1500)  Attack:  102  Defense:    8
+---
+
+[Round 4]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 919 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 724 health remaining.
+---
+Master Chief            Health:  72% ( 724/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  61% ( 919/1500)  Attack:  102  Defense:    8
+---
+
+[Round 5]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 806 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 632 health remaining.
+---
+Master Chief            Health:  63% ( 632/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  53% ( 806/1500)  Attack:  102  Defense:    8
+---
+
+[Round 6]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 693 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 540 health remaining.
+---
+Master Chief            Health:  54% ( 540/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  46% ( 693/1500)  Attack:  102  Defense:    8
+---
+
+[Round 7]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 580 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 448 health remaining.
+---
+Master Chief            Health:  44% ( 448/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  38% ( 580/1500)  Attack:  102  Defense:    8
+---
+
+[Round 8]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 467 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 356 health remaining.
+---
+Master Chief            Health:  35% ( 356/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  31% ( 467/1500)  Attack:  102  Defense:    8
+---
+
+[Round 9]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 354 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 264 health remaining.
+---
+Master Chief            Health:  26% ( 264/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  23% ( 354/1500)  Attack:  102  Defense:    8
+---
+
+[Round 10]
+Master Chief is attacking Mercy Less.
+    Barbarian deals 121 melee damage!
+Mercy Less is attacked for 121 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 113 damage, 241 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief took 92 damage, 172 health remaining.
+---
+Master Chief            Health:  17% ( 172/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  16% ( 241/1500)  Attack:  102  Defense:    8
+---
+
+[Round 11]
+Master Chief is attacking Mercy Less.
+    Bersek is activated for the next 6 seconds. Cooldown is 10 seconds.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 7 health remaining.
+Mercy Less is attacking Master Chief.
+    Heal is activated; setting health at [1500].
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Bersek is active; reducing damage received from [92] to [46].
+    Master Chief took 46 damage, 126 health remaining.
+---
+Master Chief            Health:  12% ( 126/1000)  Attack:  121  Defense:   10
+Mercy Less              Health: 100% (1500/1500)  Attack:  102  Defense:    8
+---
+
+[Round 12]
+Master Chief is attacking Mercy Less.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 1266 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Bersek is active; reducing damage received from [92] to [46].
+    Master Chief took 46 damage, 80 health remaining.
+---
+Master Chief            Health:   8% (  80/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  84% (1266/1500)  Attack:  102  Defense:    8
+---
+
+[Round 13]
+Master Chief is attacking Mercy Less.
+    Bersek is active; increasing damage dealt from [121] to [242].
+    Barbarian deals 242 melee damage!
+Mercy Less is attacked for 242 damage.
+    Barbarian has a defense of 8. Reducing damage received.
+    Mercy Less took 234 damage, 1032 health remaining.
+Mercy Less is attacking Master Chief.
+    Barbarian deals 102 melee damage!
+Master Chief is attacked for 102 damage.
+    Barbarian has a defense of 10. Reducing damage received.
+    Master Chief has been defeated!
+---
+Master Chief            Health:   0% (   0/1000)  Attack:  121  Defense:   10
+Mercy Less              Health:  68% (1032/1500)  Attack:  102  Defense:    8
+---
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
