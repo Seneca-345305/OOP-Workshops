@@ -157,9 +157,9 @@ Template parameters:
 - `Barbarian(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t primaryWeapon, Weapon_t secondaryWeapon)`: initializes a new object to the values received as parameters.
 - `int getAttackAmnt() const`: returns the damage that character can do in an attack, using the formula:
 
-  $$
+  ```math
   BASE\_ATTACK + \frac{WEAPON_1\_DAMAGE}{2} + \frac{WEAPON_2\_DAMAGE}{2}
-  $$
+  ```
 
   In this design, it is assumed that `Weapon_t` template type supports conversion to `double` operator that will return the damage the weapon can do; this operator can be used with `static_cast`.
 - `int getDefenseAmnt() const`: return the base defense value.
@@ -168,7 +168,7 @@ Template parameters:
   - print:
 
     ```txt
-    [NAME] is attacking [ENEMY_NAME].<endl>"
+    [NAME] is attacking [ENEMY_NAME].<endl>
     ```
 
   - use the special ability to activate any beneficial effects on self. **In this design, it is assumed that the type `Ability_t` has a member function named `useAbility(Character*)`** that will activate the special ability; call this function on `m_ability` member and pass the address of the current instance as a parameter.
@@ -189,7 +189,7 @@ Template parameters:
 
     ```txt
     [NAME] is attacked for [DAMAGE] damage.<endl>
-		    Barbarian has a defense of [DEFENSE]. Reducing damage received.<endl>";
+        Barbarian has a defense of [DEFENSE]. Reducing damage received.<endl>
     ```
   
   - the barbarian is able to block some of the damage: subtract the defense amount from the parameter. The new value cannot be less than 0.
@@ -220,24 +220,24 @@ Template parameters:
 - `Archer(const char* name, int healthMax, int baseAttack, int baseDefense, Weapon_t weapon)`: initializes a new object to the values received as parameters.
 - `int getAttackAmnt() const`: returns the damage that character can do in an attack, using the formula:
 
-  $$
+  ```math
   1.3 \times BASE\_ATTACK
-  $$
+  ```
 
   In this implementation the weapon is ignored.
 
 - `int getDefenseAmnt() const`: return the defense of this archer, using the formula:
 
-  $$
+  ```math
   1.2 \times BASE\_DEFENSE
-  $$
+  ```
 
 - `Character* clone() const`: dynamically creates a copy of the current instance and returns its address to the client.
 - `void attack(Character* enemy)`: attacks the enemy received as parameter and inflicts damage to it.
   - print:
 
     ```txt
-    [NAME] is attacking [ENEMY_NAME].<endl>"
+    [NAME] is attacking [ENEMY_NAME].<endl>
     ```
 
   - retrieve the damage this character can do using the function `getAttackAmnt`.
@@ -255,7 +255,7 @@ Template parameters:
 
     ```txt
     [NAME] is attacked for [DAMAGE] damage.<endl>
-		    Archer has a defense of [DEFENSE]. Reducing damage received.<endl>";
+        Archer has a defense of [DEFENSE]. Reducing damage received.<endl>
     ```
   
   - the archer is able to block some of the damage: subtract the defense amount from the parameter. The new value cannot be less than 0.
@@ -289,9 +289,9 @@ Template parameters:
 - `Rogue(const char* name, int healthMax, int baseAttack, int baseDefense)`: initializes a new object to the values received as parameters.
 - `int getAttackAmnt() const`: returns the damage that character can do in an attack, using the formula:
 
-  $$
+  ```math
   BASE\_ATTACK + 2 \times WEAPON\_DAMAGE
-  $$
+  ```
 
   Use the conversion to `double` operator from class `seneca::Dagger` to find out how much damage the dagger can do; this operator can be used with `static_cast`.
 - `int getDefenseAmnt() const`: return the base defense value.
@@ -300,7 +300,7 @@ Template parameters:
   - print:
 
     ```txt
-    [NAME] is attacking [ENEMY_NAME].<endl>"
+    [NAME] is attacking [ENEMY_NAME].<endl>
     ```
 
   - use the first special ability to activate any beneficial effects on self. **In this design, it is assumed that the type `FirstAbility_t` has a member function named `useAbility(Character*)`** that will activate the special ability; call this function on `m_firstAbility` member and pass the address of the current instance as a parameter.
@@ -323,7 +323,7 @@ Template parameters:
 
     ```txt
     [NAME] is attacked for [DAMAGE] damage.<endl>
-		    Rogue has a defense of [DEFENSE]. Reducing damage received.<endl>";
+        Rogue has a defense of [DEFENSE]. Reducing damage received.<endl>
     ```
   
   - the rogue is able to block some of the damage: subtract the defense amount from the parameter. The new value cannot be less than 0.
@@ -352,9 +352,9 @@ The `Team` is in **composition** relation with `Character`.
 
   ```txt
   [Team] TEAM_NAME<endl>
-	    1: FIRST_CHARACTER<endl>
-	    2: SECOND_CHARACTER<endl>
-	    3: THIRD_CHARACTER<endl>
+      1: FIRST_CHARACTER<endl>
+      2: SECOND_CHARACTER<endl>
+      3: THIRD_CHARACTER<endl>
       ...
   ```
   
@@ -380,9 +380,9 @@ The `Guild` is in **aggregation** relation with `Character`. All guild members r
 
   ```txt
   [Guild] GUILD_NAME<endl>
-	    1: FIRST_CHARACTER<endl>
-	    2: SECOND_CHARACTER<endl>
-	    3: THIRD_CHARACTER<endl>
+      1: FIRST_CHARACTER<endl>
+      2: SECOND_CHARACTER<endl>
+      3: THIRD_CHARACTER<endl>
       ...
   ```
   
