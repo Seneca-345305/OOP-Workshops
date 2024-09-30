@@ -373,7 +373,7 @@ The `Guild` is in **aggregation** relation with `Character`. All guild members r
 - default constructor
 - `Guild(const char* name)`: creates a guild with the name specified as parameter and no members.
 - rule of 5
-- `void addMember(const Character* c)`: adds the character received as parameter to the guild ONLY IF it's not already in the guild. Resize the array if necessary. If not already in the guild, increase the max health of the character by 300 points.
+- `void addMember(Character* c)`: adds the character received as parameter to the guild ONLY IF it's not already in the guild. Resize the array if necessary. If not already in the guild, increase the max health of the character by 300 points.
 - `void removeMember(const std::string& c)`: searches the team for a character with the name received as parameter and removes it from the team. If found in the guild, decrease the max health of the character by 300 points.
 - `Character* operator[](size_t idx) const`: returns the character at the index specified as parameter, or null if the index is out of bounds.
 - `void showMembers() const`: prints to screen the content of current object in the format:
