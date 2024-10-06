@@ -1,0 +1,11 @@
+#ID:Name:NUM:PRICE
+1000121  :  Red Bike:1  :  89.99
+1000122: Pen Set:2: 9.99
+1000123 :Colouring Book:1:8.99
+1000124:Leggo Set :2:39.99
+1000125: Toy car:10:3.99
+1000126:Bubble Bath: 3:11.98
+1000127:SpongeBob DVD:2:14.99 
+1000128  :  Skateboard: 1 :149.99
+1000129: Skateboard Helmet: 1: 22.99
+1000130 :Bike Helmet :1 :18.99

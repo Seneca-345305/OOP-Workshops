@@ -1,0 +1,68 @@
+Command Line:
+--------------------------
+  1: ws
+  2: filesystem.txt
+--------------------------
+
+--------------------------
+        FILESYSTEM
+--------------------------
+**EXPECTED EXCEPTION: Filesystem not created with invalid filename.
+
+Total size: 418 bytes
+D | images/         |
+D | videos/         |
+D | trash/          |
+D | documents/      |
+F | notes.txt       |
+--------------------------
+--------------------------
+        CHANGE DIR
+--------------------------
+**EXPECTED EXCEPTION: Couldn't change directory to invalid directory.
+
+Total size: 181 bytes
+F | cat.jpg         |    |   31 bytes | 
+F | dog.jpg         |    |   63 bytes | 
+F | .flamingo.gif   |    |   76 bytes | 
+D | pngs/           |  1 |   11 bytes | 
+--------------------------
+--------------------------
+           FIND
+--------------------------
+**EXPECTED ERROR: File elephant not found in /images/ recursively
+
+**EXPECTED ERROR: File elephant.png not found in /images/ non-recursively
+
+/images/pngs/elephant.png was found in fileystem
+--------------------------
+--------------------------
+     ADD TO DIRECTORY
+--------------------------
+Created directory classified/
+Total size: 97 bytes
+F | .aliens.txt     |    |   44 bytes | 
+F | .polls.txt      |    |   53 bytes | 
+
+Adding classified/ to /documents/
+Total size: 207 bytes
+F | contract.pdf    |    |   65 bytes | 
+F | .letter.pdf     |    |   45 bytes | 
+D | docs/           |  0 |    0 bytes | 
+D | classified/     |  2 |   97 bytes | 
+--------------------------
+--------------------------
+          REMOVE
+--------------------------
+Current size of filesystem is 515 bytes
+Current size of documents/ is 207 bytes
+
+**EXPECTED EXCEPTION: Trying to remove a directory without passing the recursive flag.
+
+After removing documents/
+Total size: 308 bytes
+D | images/         |  4 |  181 bytes | 
+D | videos/         |  2 |   91 bytes | 
+D | trash/          |  0 |    0 bytes | 
+F | notes.txt       |    |   36 bytes | 
+--------------------------

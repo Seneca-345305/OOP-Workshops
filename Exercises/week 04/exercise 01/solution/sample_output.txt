@@ -1,0 +1,247 @@
+Command Line:
+--------------------------
+  1: ws
+  2: data.txt
+--------------------------
+
+>>>  T1: The Collection of Toys
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+Toy 01000121: ................Red Bike  1 items @  89.99/item  subtotal:   89.99  tax:  11.70  total:  101.69
+Toy 01000122: .................Pen Set  2 items @   9.99/item  subtotal:   19.98  tax:   2.60  total:   22.58
+Toy 01000123: ..........Colouring Book  1 items @   8.99/item  subtotal:    8.99  tax:   1.17  total:   10.16
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000129: .......Skateboard Helmet  1 items @  22.99/item  subtotal:   22.99  tax:   2.99  total:   25.98
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T2: SC -> Testing the Constructor
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Order 1: Shopping for Kyle Patel 8 years old (10 toys)
+--------------------------
+Toy 01000121: ................Red Bike  1 items @  89.99/item  subtotal:   89.99  tax:  11.70  total:  101.69
+Toy 01000122: .................Pen Set  2 items @   9.99/item  subtotal:   19.98  tax:   2.60  total:   22.58
+Toy 01000123: ..........Colouring Book  1 items @   8.99/item  subtotal:    8.99  tax:   1.17  total:   10.16
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000129: .......Skateboard Helmet  1 items @  22.99/item  subtotal:   22.99  tax:   2.99  total:   25.98
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T3: SC -> Testing the Copy Constructor
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Order 2: Shopping for Kyle Patel 8 years old (10 toys)
+--------------------------
+Toy 01000121: ................Red Bike  1 items @  89.99/item  subtotal:   89.99  tax:  11.70  total:  101.69
+Toy 01000122: .................Pen Set  2 items @   9.99/item  subtotal:   19.98  tax:   2.60  total:   22.58
+Toy 01000123: ..........Colouring Book  1 items @   8.99/item  subtotal:    8.99  tax:   1.17  total:   10.16
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000129: .......Skateboard Helmet  1 items @  22.99/item  subtotal:   22.99  tax:   2.99  total:   25.98
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+--------------------------
+Order 3: Shopping for Kyle Patel 8 years old (10 toys)
+--------------------------
+Toy 01000121: ................Red Bike  1 items @  89.99/item  subtotal:   89.99  tax:  11.70  total:  101.69
+Toy 01000122: .................Pen Set  2 items @   9.99/item  subtotal:   19.98  tax:   2.60  total:   22.58
+Toy 01000123: ..........Colouring Book  1 items @   8.99/item  subtotal:    8.99  tax:   1.17  total:   10.16
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000129: .......Skateboard Helmet  1 items @  22.99/item  subtotal:   22.99  tax:   2.99  total:   25.98
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T4: SC -> Testing the Copy Assignment Operator
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Order 4: Shopping for Kyle Patel 8 years old (10 toys)
+--------------------------
+Toy 01000121: ................Red Bike  1 items @  89.99/item  subtotal:   89.99  tax:  11.70  total:  101.69
+Toy 01000122: .................Pen Set  2 items @   9.99/item  subtotal:   19.98  tax:   2.60  total:   22.58
+Toy 01000123: ..........Colouring Book  1 items @   8.99/item  subtotal:    8.99  tax:   1.17  total:   10.16
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000129: .......Skateboard Helmet  1 items @  22.99/item  subtotal:   22.99  tax:   2.99  total:   25.98
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+--------------------------
+Order 5: Shopping for Paul Sakuraba 11 years old (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+--------------------------
+--------------------------
+Order 6: Shopping for Paul Sakuraba 11 years old (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T5: SC -> Testing the Move Constructor
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Order 7: This shopping cart is invalid.
+--------------------------
+--------------------------
+Order 8: Shopping for Paul Sakuraba 11 years old (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T6: SC -> Testing the Move Assignment Operator
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Order 9: This shopping cart is invalid.
+--------------------------
+--------------------------
+Order 10: Shopping for Paul Sakuraba 11 years old (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+--------------------------
+--------------------------
+Order 11: Shopping for Paul Sakuraba 11 years old (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000125: .................Toy car 10 items @   3.99/item  subtotal:   39.90  tax:   5.19  total:   45.09
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+--------------------------
+--------------------------
+Order 12: This shopping cart is invalid.
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T7: CO -> Testing the Constructor
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Confirmations to Send (0 toys)
+--------------------------
+There are no confirmations to send!
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T8: CO -> Testing the Operator Overloads
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Confirmations to Send (5 toys)
+--------------------------
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000129: .......Skateboard Helmet  1 items @  22.99/item  subtotal:   22.99  tax:   2.99  total:   25.98
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+--------------------------
+Confirmations to Send (3 toys)
+--------------------------
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T9: CO -> Testing the Copy Constructor
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Confirmations to Send (3 toys)
+--------------------------
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+--------------------------
+--------------------------
+Confirmations to Send (3 toys)
+--------------------------
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T10: CO -> Testing the Move Constructor
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Confirmations to Send (0 toys)
+--------------------------
+There are no confirmations to send!
+--------------------------
+--------------------------
+Confirmations to Send (3 toys)
+--------------------------
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000127: ...........SpongeBob DVD  2 items @  14.99/item  subtotal:   29.98  tax:   3.90  total:   33.88
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T11: SC + CO -> Testing Relations
+==========:==========:==========:==========:==========:==========:==========:==========:==========:==========
+--------------------------
+Order 13: Shopping for Tom Chow 7 years old (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+--------------------------
+Confirmations to Send (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+
+After main() updates some toys ...
+
+--------------------------
+Order 14: Shopping for Tom Chow 7 years old (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  2 items @  39.99/item  subtotal:   79.98  tax:  10.40  total:   90.38
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000128: ..............Skateboard  1 items @ 149.99/item  subtotal:  149.99  tax:  19.50  total:  169.49
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+--------------------------
+Confirmations to Send (4 toys)
+--------------------------
+Toy 01000124: ...............Leggo Set  6 items @  39.99/item  subtotal:  239.94  tax:  31.19  total:  271.13
+Toy 01000126: .............Bubble Bath  3 items @  11.98/item  subtotal:   35.94  tax:   4.67  total:   40.61
+Toy 01000128: ..............Skateboard  4 items @ 149.99/item  subtotal:  599.96  tax:  77.99  total:  677.95
+Toy 01000130: .............Bike Helmet  1 items @  18.99/item  subtotal:   18.99  tax:   2.47  total:   21.46
+--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
