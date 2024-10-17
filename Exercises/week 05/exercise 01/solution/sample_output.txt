@@ -1,0 +1,184 @@
+Command Line:
+--------------------------
+  1: ws
+  2: emails.csv
+  3: identities.txt
+  4: spam.txt
+--------------------------
+
+>>>  T1: Testing wrong destination address and fix
+==========:==========:==========:==========:==========
+EXCEPTION: Message intended for []
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2024-02-26       Regarding the Project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T2: Adding some messages to the inbox
+==========:==========:==========:==========:==========
+EXCEPTION: Message intended for [jane.doe@senemail.ca]
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2024-02-26       Regarding the Project
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-26       Can I have an Extension?
+         Colton Lowe  colton_lowe21@wiki.be                     2024-02-26       Team Member Unavailable to Work on the Project
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       Exciting News!!!
+          Dylan Diaz  dylan_diaz90@agency.cn                    2024-02-26       C++ is sooo good
+        Logan Thomas  logan_thomas72@project.ca                 2024-02-26       Enjoy your vacation
+     Sophia Martinez  sophia_martinez64@resource.uk             2024-02-27       Have you finished the presentation? Send it to me.
+         Alyssa Soto  alyssa_soto29@dev.es                      2024-02-28       We should have a meeting tomorrow to discuss the budget
+        Olivia Brown  olivia_brown2@technology.aero             2024-03-01       Your package has been delivered
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T3: Check the plugins.
+==========:==========:==========:==========:==========
+[Spam Filter Plugin] Identified 0 spam messages.
+[Identity Checker Plugin] can validate identity for colton_lowe21@wiki.be, isabel_thompson26@directory.au, jonathan_russell23@website.ae
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T4: Adding the rest of the messages to the inbox.
+==========:==========:==========:==========:==========
+1. New mail from Isabel Snyder.
+2. New mail from Isabel Thompson.
+3. New mail from Emma Jones.
+4. New mail from Jeremiah Morris.
+5. New mail from Jonathan Russell.
+6. New mail from Colton Lowe.
+EXCEPTION: Message intended for [anna.garcia@senemail.ca]
+7. New mail from Eleanor Jenkins.
+8. New mail from Jon Snow.
+9. New mail from Mia Peterson.
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2024-02-26       Regarding the Project
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-26       Can I have an Extension?
+         Colton Lowe  colton_lowe21@wiki.be                     2024-02-26       Team Member Unavailable to Work on the Project
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       Exciting News!!!
+          Dylan Diaz  dylan_diaz90@agency.cn                    2024-02-26       C++ is sooo good
+        Logan Thomas  logan_thomas72@project.ca                 2024-02-26       Enjoy your vacation
+     Sophia Martinez  sophia_martinez64@resource.uk             2024-02-27       Have you finished the presentation? Send it to me.
+         Alyssa Soto  alyssa_soto29@dev.es                      2024-02-28       We should have a meeting tomorrow to discuss the budget
+        Olivia Brown  olivia_brown2@technology.aero             2024-03-01       Your package has been delivered
+       Isabel Snyder  isabel_snyder39@webpage.biz               2024-03-02       No classes tomorrow
+     Isabel Thompson  isabel_thompson26@directory.au            2024-03-03       [TRUSTED] [SPAM] Is the project cancelled?!?!
+          Emma Jones  emma_jones19@system.sa                    2024-03-04       Look at this ASAP
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2023-03-05       Our project has been approved
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-19       [TRUSTED] I cannot come to classes today
+         Colton Lowe  colton_lowe21@wiki.be                     2023-12-29       [TRUSTED] Has the projects received approval from ministry?
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-01-11       Free things from us. Claim your prize now!!!
+            Jon Snow  jon.snow@westeros.ca                      2024-09-11       [SPAM] Expect Exciting News!!! Your Wait Is Over
+        Mia Peterson  mia_peterson70@corporation.jobs           2024-03-26       [SPAM] Congratulations! You won the ltery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T5: Check the plugins again.
+==========:==========:==========:==========:==========
+[Spam Filter Plugin] Identified 3 spam messages.
+[Identity Checker Plugin] can validate identity for colton_lowe21@wiki.be, isabel_thompson26@directory.au, jonathan_russell23@website.ae
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T6: Check the index-out-of-bounds exception.
+==========:==========:==========:==========:==========
+ 0. Regarding the Project
+ 1. Can I have an Extension?
+ 2. Team Member Unavailable to Work on the Project
+ 3. Exciting News!!!
+ 4. C++ is sooo good
+ 5. Enjoy your vacation
+ 6. Have you finished the presentation? Send it to me.
+ 7. We should have a meeting tomorrow to discuss the budget
+ 8. Your package has been delivered
+ 9. No classes tomorrow
+10. [TRUSTED] [SPAM] Is the project cancelled?!?!
+11. Look at this ASAP
+12. Our project has been approved
+13. [TRUSTED] I cannot come to classes today
+14. [TRUSTED] Has the projects received approval from ministry?
+15. Free things from us. Claim your prize now!!!
+16. [SPAM] Expect Exciting News!!! Your Wait Is Over
+17. [SPAM] Congratulations! You won the ltery
+EXCEPTION: Index 18 is out of bounds.
+EXCEPTION: Index 19 is out of bounds.
+EXCEPTION: Index 20 is out of bounds.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T7: Check Copy Constructor.
+==========:==========:==========:==========:==========
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2024-02-26       Regarding the Project
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-26       Can I have an Extension?
+         Colton Lowe  colton_lowe21@wiki.be                     2024-02-26       Team Member Unavailable to Work on the Project
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       Exciting News!!!
+          Dylan Diaz  dylan_diaz90@agency.cn                    2024-02-26       C++ is sooo good
+        Logan Thomas  logan_thomas72@project.ca                 2024-02-26       Enjoy your vacation
+     Sophia Martinez  sophia_martinez64@resource.uk             2024-02-27       Have you finished the presentation? Send it to me.
+         Alyssa Soto  alyssa_soto29@dev.es                      2024-02-28       We should have a meeting tomorrow to discuss the budget
+        Olivia Brown  olivia_brown2@technology.aero             2024-03-01       Your package has been delivered
+       Isabel Snyder  isabel_snyder39@webpage.biz               2024-03-02       No classes tomorrow
+     Isabel Thompson  isabel_thompson26@directory.au            2024-03-03       [TRUSTED] [SPAM] Is the project cancelled?!?!
+          Emma Jones  emma_jones19@system.sa                    2024-03-04       Look at this ASAP
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2023-03-05       Our project has been approved
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-19       [TRUSTED] I cannot come to classes today
+         Colton Lowe  colton_lowe21@wiki.be                     2023-12-29       [TRUSTED] Has the projects received approval from ministry?
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-01-11       Free things from us. Claim your prize now!!!
+            Jon Snow  jon.snow@westeros.ca                      2024-09-11       [SPAM] Expect Exciting News!!! Your Wait Is Over
+        Mia Peterson  mia_peterson70@corporation.jobs           2024-03-26       [SPAM] Congratulations! You won the ltery
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       [SPAM] Exciting News!!!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T8: Check the plugins again.
+==========:==========:==========:==========:==========
+[Spam Filter Plugin] Identified 4 spam messages.
+[Identity Checker Plugin] can validate identity for colton_lowe21@wiki.be, isabel_thompson26@directory.au, jonathan_russell23@website.ae
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T9: Check Copy Assignment.
+==========:==========:==========:==========:==========
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2024-02-26       Regarding the Project
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-26       Can I have an Extension?{Read}
+         Colton Lowe  colton_lowe21@wiki.be                     2024-02-26       Team Member Unavailable to Work on the Project
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       Exciting News!!!
+          Dylan Diaz  dylan_diaz90@agency.cn                    2024-02-26       C++ is sooo good
+        Logan Thomas  logan_thomas72@project.ca                 2024-02-26       Enjoy your vacation
+     Sophia Martinez  sophia_martinez64@resource.uk             2024-02-27       Have you finished the presentation? Send it to me.
+         Alyssa Soto  alyssa_soto29@dev.es                      2024-02-28       We should have a meeting tomorrow to discuss the budget
+        Olivia Brown  olivia_brown2@technology.aero             2024-03-01       Your package has been delivered
+       Isabel Snyder  isabel_snyder39@webpage.biz               2024-03-02       No classes tomorrow
+     Isabel Thompson  isabel_thompson26@directory.au            2024-03-03       [TRUSTED] [SPAM] Is the project cancelled?!?!
+          Emma Jones  emma_jones19@system.sa                    2024-03-04       Look at this ASAP
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2023-03-05       Our project has been approved
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-19       [TRUSTED] I cannot come to classes today
+         Colton Lowe  colton_lowe21@wiki.be                     2023-12-29       [TRUSTED] Has the projects received approval from ministry?
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-01-11       Free things from us. Claim your prize now!!!
+            Jon Snow  jon.snow@westeros.ca                      2024-09-11       [SPAM] Expect Exciting News!!! Your Wait Is Over
+        Mia Peterson  mia_peterson70@corporation.jobs           2024-03-26       [SPAM] Congratulations! You won the ltery
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       [SPAM] Exciting News!!!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T10: Check the plugins again.
+==========:==========:==========:==========:==========
+[Spam Filter Plugin] Identified 5 spam messages.
+[Identity Checker Plugin] can validate identity for colton_lowe21@wiki.be, isabel_thompson26@directory.au, jonathan_russell23@website.ae
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T11: Check Move Assignment.
+==========:==========:==========:==========:==========
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2024-02-26       Regarding the Project
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-26       Can I have an Extension?{Read}
+         Colton Lowe  colton_lowe21@wiki.be                     2024-02-26       Team Member Unavailable to Work on the Project{Read}
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       Exciting News!!!
+          Dylan Diaz  dylan_diaz90@agency.cn                    2024-02-26       C++ is sooo good
+        Logan Thomas  logan_thomas72@project.ca                 2024-02-26       Enjoy your vacation
+     Sophia Martinez  sophia_martinez64@resource.uk             2024-02-27       Have you finished the presentation? Send it to me.
+         Alyssa Soto  alyssa_soto29@dev.es                      2024-02-28       We should have a meeting tomorrow to discuss the budget
+        Olivia Brown  olivia_brown2@technology.aero             2024-03-01       Your package has been delivered
+       Isabel Snyder  isabel_snyder39@webpage.biz               2024-03-02       No classes tomorrow
+     Isabel Thompson  isabel_thompson26@directory.au            2024-03-03       [TRUSTED] [SPAM] Is the project cancelled?!?!
+          Emma Jones  emma_jones19@system.sa                    2024-03-04       Look at this ASAP
+     Jeremiah Morris  jeremiah_morris85@office.mobi             2023-03-05       Our project has been approved
+    Jonathan Russell  jonathan_russell23@website.ae             2024-02-19       [TRUSTED] I cannot come to classes today
+         Colton Lowe  colton_lowe21@wiki.be                     2023-12-29       [TRUSTED] Has the projects received approval from ministry?
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-01-11       Free things from us. Claim your prize now!!!
+            Jon Snow  jon.snow@westeros.ca                      2024-09-11       [SPAM] Expect Exciting News!!! Your Wait Is Over
+        Mia Peterson  mia_peterson70@corporation.jobs           2024-03-26       [SPAM] Congratulations! You won the ltery
+     Eleanor Jenkins  eleanor_jenkins46@site.info               2024-02-26       [SPAM] Exciting News!!!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T12: Check the plugins again.
+==========:==========:==========:==========:==========
+[Spam Filter Plugin] Identified 6 spam messages.
+[Identity Checker Plugin] can validate identity for colton_lowe21@wiki.be, isabel_thompson26@directory.au, jonathan_russell23@website.ae
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
