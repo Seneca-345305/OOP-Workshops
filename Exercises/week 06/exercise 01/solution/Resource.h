@@ -1,5 +1,4 @@
 // Exercise - STL Containers
-// 2021/12/05 - Gideon
 
 #ifndef SENECA_RESOURCE_H
 #define SENECA_RESOURCE_H

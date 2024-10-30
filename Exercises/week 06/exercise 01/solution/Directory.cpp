@@ -1,5 +1,4 @@
 // Exercise - STL Containers
-// 2021/12/05 - Gideon
 
 #include <forward_list>
 #include <iomanip>
