@@ -1,0 +1,11 @@
+images/cat.jpg    | This is an image of a cute cat!
+    images/dog.jpg |     This file contains a picture of a dog running on an open field.
+images/.flamingo.gif   |     A beautiful flamingo moving its head from side to side looking for something   
+images/pngs/elephant.png   | An elephant
+  videos/scene.mov  |    A short scenic video of mountains
+videos/harry-potter.avi  |     A compilation of best clips from the 8 Harry Potter movies
+trash/    
+documents/contract.pdf | This is a contract agreement between Seneca College and a student
+notes.txt  |  Personal notes taken during meetings
+documents/.letter.pdf   |    A letter template with an official letterhead
+documents/docs/
