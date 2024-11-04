@@ -1,0 +1,1157 @@
+Command Line:
+--------------------------
+  1: ws
+--------------------------
+
+>>>  T1: Loading TV Shows
+==========:==========:==========:==========:==========
+ERROR: [# Show ID, Title, Release Year, Summary] Not a valid show.
+ERROR: [#-------------------------------------------] Not a valid show.
+ERROR: [# Show ID, Episode Number Overall, Season Number, Episode Number in Season, First Air Date, Length, Episode Title, Episode Summary] Not a valid episode.
+ERROR: [#-----------------------------------------------------------------------------------------------------------------------------------] Not a valid episode.
+ERROR: [# Show ID, Title, Release Year, Summary] Not a valid show.
+ERROR: [#-------------------------------------------] Not a valid show.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T2: Display TV Shows as Table
+==========:==========:==========:==========:==========
+S | "Game of Thrones"................................. |  0 | 2011 | "Based on the bestselling book series A Song of Ice and Fire ...
+S | "The Fall of the House of Usher".................. |  8 | 2023 | "To secure their fortune - and future - two ruthless siblings...
+S | "Agatha All Along"................................ |  9 | 2024 | "In Agatha All Along, the infamous Agatha Harkness finds hers...
+S | "The Rising"...................................... |  8 | 2022 | "The Rising is the story of Neve Kelly, who discovers that sh...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T3: Display 'The Fall of the House of Usher'
+==========:==========:==========:==========:==========
+"The Fall of the House of Usher" [2023]
+---------------------------------------
+    "To secure their fortune - and future - two ruthless siblings build a family dyn
+    asty that begins to crumble when their heirs mysteriously die, one by one."
+    S01E07 "The Pit and the Pendulum"
+            "A furious Frederick sets out to handle unfinished business. Madeline re
+            ceives an ominous message at an old haunt. Dupin grows wary of Roderick'
+            s motives."
+    S01E01 "A Midnight Dreary"
+            "A wealthy CEO faces a criminal investigation amid tragedy, trauma - and
+             a supernatural threat. The Usher family learns an informant lurks among
+             them."
+    S01E08 "The Raven"
+            "In 1980, Roderick and Madeline seize a chance to cement their fortune -
+             for a price. Decades later, the remaining Ushers reckon with the conseq
+            uences."
+    S01E03 "Murder in the Rue Morgue"
+            "In charge of the Ushers' publicity, Camille conspires to spin controver
+            sy in her family's favor and expose the grim details of her sister's exp
+            eriments."
+    S01E04 "The Black Cat"
+            "Leo adopts a black cat who soon brings evil - and a mysterious woman - 
+            into his home, while Roderick struggles with terrifying hallucinations."
+    S01E02 "The Masque of the Red Death"
+            "Motivated by money and revenge, Perry hosts an exclusive masque-rave th
+            at takes a twisted turn. A young Roderick pitches a revolutionary new op
+            ioid."
+    S01E06 "Goldbug"
+            "Pym digs up disturbing information on Verna. With her marriage on the d
+            ecline, Tamerlane hosts a turbulent product launch that shatters expecta
+            tions."
+    S01E05 "The Tell-Tale Heart"
+            "Victorine inches closer to testing her heart technology on a patient un
+            til tensions erupt between her and Alessandra. Dupin makes a chilling co
+            nfession."
+---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T4: Load More Shows
+==========:==========:==========:==========:==========
+ERROR: [# Show ID, Episode Number Overall, Season Number, Episode Number in Season, First Air Date, Length, Episode Title, Episode Summary] Not a valid episode.
+ERROR: [#-----------------------------------------------------------------------------------------------------------------------------------] Not a valid episode.
+ERROR: [] Not a valid episode.
+ERROR: [] Not a valid episode.
+ERROR: [] Not a valid episode.
+ERROR: [] Not a valid episode.
+ERROR: [] Not a valid episode.
+ERROR: [] Not a valid episode.
+ERROR: [] Not a valid episode.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T5: Display All TV Shows as Table
+==========:==========:==========:==========:==========
+S | "Game of Thrones"................................. | 73 | 2011 | "Based on the bestselling book series A Song of Ice and Fire by Georg...
+S | "The Fall of the House of Usher".................. |  8 | 2023 | "To secure their fortune - and future - two ruthless siblings build a...
+S | "Agatha All Along"................................ |  9 | 2024 | "In Agatha All Along, the infamous Agatha Harkness finds herself down...
+S | "The Rising"...................................... |  8 | 2022 | "The Rising is the story of Neve Kelly, who discovers that she is dea...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T6: Load Movies
+==========:==========:==========:==========:==========
+ERROR: [#  Title,             Release Year,          Summary] Not a valid movie.
+ERROR: [#-----------------------------------------------------------] Not a valid movie.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T7: Display Shows and Movies as Table
+==========:==========:==========:==========:==========
+S | "Game of Thrones"................................. | 73 | 2011 | "Based on the bestselling book series A Song of Ice and Fire by George R.R. M...
+S | "The Fall of the House of Usher".................. |  8 | 2023 | "To secure their fortune - and future - two ruthless siblings build a family ...
+S | "Agatha All Along"................................ |  9 | 2024 | "In Agatha All Along, the infamous Agatha Harkness finds herself down and out...
+S | "The Rising"...................................... |  8 | 2022 | "The Rising is the story of Neve Kelly, who discovers that she is dead. She's...
+M | The Novice........................................ |      2021 | "A college freshman joins her university's rowing team and undertakes an obse...
+M | Don't Look Up..................................... |      2021 | "Two low-level astronomers must go on a giant media tour to warn humankind of...
+M | King Richard...................................... |      2021 | "A look at how tennis superstars Venus and Serena Williams became who they ar...
+M | Past Lives........................................ |      2023 | "Nora and Hae Sung, two deeply connected childhood friends, are wrested apart...
+M | Dune: Part Two.................................... |      2024 | "Paul Atreides unites with the Fremen while on a warpath of revenge against t...
+M | Deadpool and Wolverine............................ |      2024 | "Deadpool is offered a place in the Marvel Cinematic Universe by teh Time Var...
+M | Ghostlight........................................ |      2024 | When a construction worker unexpectedly joins a local theater's production of...
+M | Avatar: The Way of Water.......................... |      2022 | "Jake Sully lives with his newfound family formed on the extrasolar moon Pand...
+M | Inside Out 2...................................... |      2024 | "A sequel that features Riley entering puberty and experiencing brand new, mo...
+M | Kingdom of the Planet of the Apes................. |      2024 | "Many years after the reign of Caesar, a young ape goes on a journey that wil...
+M | The Menu.......................................... |      2022 | "A young couple travels to a remote island to eat at an exclusive restaurant ...
+M | Oppenheimer....................................... |      2023 | "A dramatization of the life story of J. Robert Oppenheimer, the physicist wh...
+M | Furiosa: A Mad Max Saga........................... |      2024 | "The origin story of renegade warrior Furiosa before her encounter and teamup...
+M | Terminator: Dork Fate............................. |      2019 | "Sarah Connor and a hibrid cyborg human must protect a young girl from a newl...
+M | Sound of Metal.................................... |      2019 | "During a series of adrenaline-fueled gigs, itinerant punk-metal drummer Rube...
+M | The Banshees of Inisherin......................... |      2022 | "Two lifelong friends find themselves at an impasse when one abruptly ends th...
+M | Riders of Justice................................. |      2020 | "Markus goes home to his teenage daughter, Mathilde, when his wife dies in a ...
+M | Soul.............................................. |      2020 | "Joe is a middle-school band teacher whose life hasn't quite gone the way he ...
+M | The Call.......................................... |      2020 | "Two people live in different times. Seo-Yeon lives in the present and Young-...
+M | Wolfwalkers....................................... |      2020 | "A young apprentice hunter and her father journey to Ireland to help wipe out...
+M | Boiling Point..................................... |      2022 | "Enter the relentless pressure of a restaurant kitchen as a head chef wrangle...
+M | All Quiet on the Western Front.................... |      2022 | "A young German soldier's terrifying experiences and distress on the western ...
+M | Everything Everywhere All at Once................. |      2022 | "A middle-aged Chinese immigrant is swept up into an insane adventure in whic...
+M | The Substance..................................... |      2024 | "A fading celebrity takes a black-market drug: a cell-replicating substance t...
+M | News of the World................................. |      2020 | "A Civil War veteran agrees to deliver a girl taken by the Kiowa people years...
+M | Avengers: Endgame................................. |      2019 | "With the help of remaining allies, teh Avengers assemble once more in order ...
+M | Guardians of the Galaxy Volume 3.................. |      2023 | "Still reeling from the loss of Gamora, Peter Quill rallies his team to defen...
+M | Poor Things....................................... |      2023 | "An account of the fantastical evolution of Bella Baxter, a young woman broug...
+M | Dungeons and Dragons: Honor Among Thieves......... |      2023 | "A charming thief and a band of unlikely adventurers embark on an epic quest ...
+M | The Holdovers..................................... |      2023 | "A curmudgeonly instructor at a New England school remains on campus during C...
+M | The Night House................................... |      2020 | "A widow begims to uncover her recently deceased husband's disturbing secrets."
+M | The Fall Guy...................................... |      2024 | "A stuntman, fresh off an almost career-ending accident, has to track down a ...
+M | Dork Phoenix...................................... |      2019 | "Jean Grey begims to develop incredible Dork powers that corrupt and turn her...
+M | Love and Monsters................................. |      2020 | "Seven years after he survived the monster apocalypse, lovably hapless Joel l...
+M | The Last Duel..................................... |      2021 | "The Knight Jean de Carrouges must settle the dispute over his wife Marguerit...
+M | The Lord of teh Rings: The War of teh Rohirrim.... |      2024 | "A sudden attack by Wulf, a clever and ruthless Dunlending lord seeking venge...
+M | Aftersun.......................................... |      2022 | "Sophie reflects on the shared joy and private melancholy of a holiday she to...
+M | Encanto........................................... |      2021 | "An extraordinary family, the Madrigals, live hidden in the mountains of Colo...
+M | Star Wars: The Rise of Skywalker.................. |      2019 | "The surviving Resistance faces the First Order once more in the final chapte...
+M | Run............................................... |      2020 | "Chloe, a teenager who is confined to a wheelchair, is homeschooled by her mo...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T8: Load Books with an Observer Deployed
+==========:==========:==========:==========:==========
+ERROR: [# Author, Title, Country, Price, Year, Summary] Not a valid book.
+ERROR: [#-----------------------------------------------------------] Not a valid book.
+Item "Don Quixote" added!
+Item "A Tale of Two Cities" added!
+Item "A Song of Ice and Fire" added!
+Item "The Lord of the Rings" added!
+Item "Harry Potter" added!
+Item "The Da Vinci Code" added!
+Item "The Catcher in teh Rye" added!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T9: Display Everything as Table
+==========:==========:==========:==========:==========
+S | "Game of Thrones"................................. | 73 | 2011 | "Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawlin...
+S | "The Fall of the House of Usher".................. |  8 | 2023 | "To secure their fortune - and future - two ruthless siblings build a family dynasty that begins ...
+S | "Agatha All Along"................................ |  9 | 2024 | "In Agatha All Along, the infamous Agatha Harkness finds herself down and out of power after a su...
+S | "The Rising"...................................... |  8 | 2022 | "The Rising is the story of Neve Kelly, who discovers that she is dead. She's scared and confused...
+M | The Novice........................................ |      2021 | "A college freshman joins her university's rowing team and undertakes an obsessive physical and p...
+M | Don't Look Up..................................... |      2021 | "Two low-level astronomers must go on a giant media tour to warn humankind of an approaching come...
+M | King Richard...................................... |      2021 | "A look at how tennis superstars Venus and Serena Williams became who they are after the coaching...
+M | Past Lives........................................ |      2023 | "Nora and Hae Sung, two deeply connected childhood friends, are wrested apart after Nora's family...
+M | Dune: Part Two.................................... |      2024 | "Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who ...
+M | Deadpool and Wolverine............................ |      2024 | "Deadpool is offered a place in the Marvel Cinematic Universe by teh Time Variance Authority, but...
+M | Ghostlight........................................ |      2024 | When a construction worker unexpectedly joins a local theater's production of Romeo and Juliet, t...
+M | Avatar: The Way of Water.......................... |      2022 | "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar...
+M | Inside Out 2...................................... |      2024 | "A sequel that features Riley entering puberty and experiencing brand new, more complex emotions ...
+M | Kingdom of the Planet of the Apes................. |      2024 | "Many years after the reign of Caesar, a young ape goes on a journey that will lead him to questi...
+M | The Menu.......................................... |      2022 | "A young couple travels to a remote island to eat at an exclusive restaurant where the chef has p...
+M | Oppenheimer....................................... |      2023 | "A dramatization of the life story of J. Robert Oppenheimer, the physicist who had a large hand i...
+M | Furiosa: A Mad Max Saga........................... |      2024 | "The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max."
+M | Terminator: Dork Fate............................. |      2019 | "Sarah Connor and a hibrid cyborg human must protect a young girl from a newly modiffied liquid T...
+M | Sound of Metal.................................... |      2019 | "During a series of adrenaline-fueled gigs, itinerant punk-metal drummer Ruben begims to experien...
+M | The Banshees of Inisherin......................... |      2022 | "Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, wi...
+M | Riders of Justice................................. |      2020 | "Markus goes home to his teenage daughter, Mathilde, when his wife dies in a train crash. All app...
+M | Soul.............................................. |      2020 | "Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true p...
+M | The Call.......................................... |      2020 | "Two people live in different times. Seo-Yeon lives in the present and Young-Sook lives in the pa...
+M | Wolfwalkers....................................... |      2020 | "A young apprentice hunter and her father journey to Ireland to help wipe out the last wolf pack....
+M | Boiling Point..................................... |      2022 | "Enter the relentless pressure of a restaurant kitchen as a head chef wrangles his team on the bu...
+M | All Quiet on the Western Front.................... |      2022 | "A young German soldier's terrifying experiences and distress on the western front during World W...
+M | Everything Everywhere All at Once................. |      2022 | "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save...
+M | The Substance..................................... |      2024 | "A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily crea...
+M | News of the World................................. |      2020 | "A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago to her aunt and...
+M | Avengers: Endgame................................. |      2019 | "With the help of remaining allies, teh Avengers assemble once more in order to reverse Thanos' a...
+M | Guardians of the Galaxy Volume 3.................. |      2023 | "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and o...
+M | Poor Things....................................... |      2023 | "An account of the fantastical evolution of Bella Baxter, a young woman brought back to life by t...
+M | Dungeons and Dragons: Honor Among Thieves......... |      2023 | "A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost r...
+M | The Holdovers..................................... |      2023 | "A curmudgeonly instructor at a New England school remains on campus during Christmas break. He s...
+M | The Night House................................... |      2020 | "A widow begims to uncover her recently deceased husband's disturbing secrets."
+M | The Fall Guy...................................... |      2024 | "A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, ...
+M | Dork Phoenix...................................... |      2019 | "Jean Grey begims to develop incredible Dork powers that corrupt and turn her into a Dork Phoenix."
+M | Love and Monsters................................. |      2020 | "Seven years after he survived the monster apocalypse, lovably hapless Joel leaves his cozy under...
+M | The Last Duel..................................... |      2021 | "The Knight Jean de Carrouges must settle the dispute over his wife Marguerite by challenging his...
+M | The Lord of teh Rings: The War of teh Rohirrim.... |      2024 | "A sudden attack by Wulf, a clever and ruthless Dunlending lord seeking vengeance for teh death o...
+M | Aftersun.......................................... |      2022 | "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father t...
+M | Encanto........................................... |      2021 | "An extraordinary family, the Madrigals, live hidden in the mountains of Colombia, in a magical h...
+M | Star Wars: The Rise of Skywalker.................. |      2019 | "The surviving Resistance faces the First Order once more in the final chapter of the Skywalker s...
+M | Run............................................... |      2020 | "Chloe, a teenager who is confined to a wheelchair, is homeschooled by her mother, Diane. Chloe s...
+B | Don Quixote....................................... | ES | 1612 | The story follows a Hidalgo, Alonso Quixano, who proves that chivalry will in fact never die.
+B | A Tale of Two Cities.............................. | UK | 1859 | A historical novel, set in London and Paris at teh begiming and during the French Revolution.
+B | A Song of Ice and Fire............................ | US | 1997 | Nine noble famillies begim fighting for control over teh mythical lands of Westeros.
+B | The Lord of the Rings............................. | UK | 1993 | Sauron has gathered to him all teh Rings of Power, and he intends to use them to rule Middle-earth.
+B | Harry Potter...................................... | UK | 1997 | Harry realizes his life is far from ordinary.
+B | The Da Vinci Code................................. | US | 2003 | While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in teh night.
+B | The Catcher in teh Rye............................ | US | 1951 | The story of a teen named Holden Caulfield and his struggle to find his voice in an adult world.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T10: Use the Spellckecker Functor
+==========:==========:==========:==========:==========
+Spellchecker Statistics
+teh            : 0 replacements
+modiffied      : 0 replacements
+begim          : 0 replacements
+famillies      : 0 replacements
+Dork           : 0 replacements
+hibrid         : 0 replacements
+Spellchecker Statistics
+teh            : 13 replacements
+modiffied      : 1 replacements
+begim          : 6 replacements
+famillies      : 1 replacements
+Dork           : 4 replacements
+hibrid         : 1 replacements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T11: Display Everything as Table
+==========:==========:==========:==========:==========
+S | "Game of Thrones"................................. | 73 | 2011 | "Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawlin...
+S | "The Fall of the House of Usher".................. |  8 | 2023 | "To secure their fortune - and future - two ruthless siblings build a family dynasty that begins ...
+S | "Agatha All Along"................................ |  9 | 2024 | "In Agatha All Along, the infamous Agatha Harkness finds herself down and out of power after a su...
+S | "The Rising"...................................... |  8 | 2022 | "The Rising is the story of Neve Kelly, who discovers that she is dead. She's scared and confused...
+M | The Novice........................................ |      2021 | "A college freshman joins her university's rowing team and undertakes an obsessive physical and p...
+M | Don't Look Up..................................... |      2021 | "Two low-level astronomers must go on a giant media tour to warn humankind of an approaching come...
+M | King Richard...................................... |      2021 | "A look at how tennis superstars Venus and Serena Williams became who they are after the coaching...
+M | Past Lives........................................ |      2023 | "Nora and Hae Sung, two deeply connected childhood friends, are wrested apart after Nora's family...
+M | Dune: Part Two.................................... |      2024 | "Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who ...
+M | Deadpool and Wolverine............................ |      2024 | "Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but...
+M | Ghostlight........................................ |      2024 | When a construction worker unexpectedly joins a local theater's production of Romeo and Juliet, t...
+M | Avatar: The Way of Water.......................... |      2022 | "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar...
+M | Inside Out 2...................................... |      2024 | "A sequel that features Riley entering puberty and experiencing brand new, more complex emotions ...
+M | Kingdom of the Planet of the Apes................. |      2024 | "Many years after the reign of Caesar, a young ape goes on a journey that will lead him to questi...
+M | The Menu.......................................... |      2022 | "A young couple travels to a remote island to eat at an exclusive restaurant where the chef has p...
+M | Oppenheimer....................................... |      2023 | "A dramatization of the life story of J. Robert Oppenheimer, the physicist who had a large hand i...
+M | Furiosa: A Mad Max Saga........................... |      2024 | "The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max."
+M | Terminator: Dark Fate............................. |      2019 | "Sarah Connor and a hybrid cyborg human must protect a young girl from a newly modified liquid Te...
+M | Sound of Metal.................................... |      2019 | "During a series of adrenaline-fueled gigs, itinerant punk-metal drummer Ruben begins to experien...
+M | The Banshees of Inisherin......................... |      2022 | "Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, wi...
+M | Riders of Justice................................. |      2020 | "Markus goes home to his teenage daughter, Mathilde, when his wife dies in a train crash. All app...
+M | Soul.............................................. |      2020 | "Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true p...
+M | The Call.......................................... |      2020 | "Two people live in different times. Seo-Yeon lives in the present and Young-Sook lives in the pa...
+M | Wolfwalkers....................................... |      2020 | "A young apprentice hunter and her father journey to Ireland to help wipe out the last wolf pack....
+M | Boiling Point..................................... |      2022 | "Enter the relentless pressure of a restaurant kitchen as a head chef wrangles his team on the bu...
+M | All Quiet on the Western Front.................... |      2022 | "A young German soldier's terrifying experiences and distress on the western front during World W...
+M | Everything Everywhere All at Once................. |      2022 | "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save...
+M | The Substance..................................... |      2024 | "A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily crea...
+M | News of the World................................. |      2020 | "A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago to her aunt and...
+M | Avengers: Endgame................................. |      2019 | "With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' a...
+M | Guardians of the Galaxy Volume 3.................. |      2023 | "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and o...
+M | Poor Things....................................... |      2023 | "An account of the fantastical evolution of Bella Baxter, a young woman brought back to life by t...
+M | Dungeons and Dragons: Honor Among Thieves......... |      2023 | "A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost r...
+M | The Holdovers..................................... |      2023 | "A curmudgeonly instructor at a New England school remains on campus during Christmas break. He s...
+M | The Night House................................... |      2020 | "A widow begins to uncover her recently deceased husband's disturbing secrets."
+M | The Fall Guy...................................... |      2024 | "A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, ...
+M | Dark Phoenix...................................... |      2019 | "Jean Grey begins to develop incredible Dark powers that corrupt and turn her into a Dark Phoenix."
+M | Love and Monsters................................. |      2020 | "Seven years after he survived the monster apocalypse, lovably hapless Joel leaves his cozy under...
+M | The Last Duel..................................... |      2021 | "The Knight Jean de Carrouges must settle the dispute over his wife Marguerite by challenging his...
+M | The Lord of the Rings: The War of the Rohirrim.... |      2024 | "A sudden attack by Wulf, a clever and ruthless Dunlending lord seeking vengeance for the death o...
+M | Aftersun.......................................... |      2022 | "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father t...
+M | Encanto........................................... |      2021 | "An extraordinary family, the Madrigals, live hidden in the mountains of Colombia, in a magical h...
+M | Star Wars: The Rise of Skywalker.................. |      2019 | "The surviving Resistance faces the First Order once more in the final chapter of the Skywalker s...
+M | Run............................................... |      2020 | "Chloe, a teenager who is confined to a wheelchair, is homeschooled by her mother, Diane. Chloe s...
+B | Don Quixote....................................... | ES | 1612 | The story follows a Hidalgo, Alonso Quixano, who proves that chivalry will in fact never die.
+B | A Tale of Two Cities.............................. | UK | 1859 | A historical novel, set in London and Paris at the begining and during the French Revolution.
+B | A Song of Ice and Fire............................ | US | 1997 | Nine noble families begin fighting for control over the mythical lands of Westeros.
+B | The Lord of the Rings............................. | UK | 1993 | Sauron has gathered to him all the Rings of Power, and he intends to use them to rule Middle-earth.
+B | Harry Potter...................................... | UK | 1997 | Harry realizes his life is far from ordinary.
+B | The Da Vinci Code................................. | US | 2003 | While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the night.
+B | The Catcher in the Rye............................ | US | 1951 | The story of a teen named Holden Caulfield and his struggle to find his voice in an adult world.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T12: Remove Quotes from Title and Summary (ALG)
+==========:==========:==========:==========:==========
+S | Game of Thrones................................... | 73 | 2011 | Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, t...
+S | The Fall of the House of Usher.................... |  8 | 2023 | To secure their fortune - and future - two ruthless siblings build a family dynasty that begins to crumble when their heirs mysteriously die, one by one.
+S | Agatha All Along.................................. |  9 | 2024 | In Agatha All Along, the infamous Agatha Harkness finds herself down and out of power after a suspicious goth Teen helps break her free from a distorted spell. Her interest is piqued when he begs her to take him on the legendary Witches'...
+S | The Rising........................................ |  8 | 2022 | The Rising is the story of Neve Kelly, who discovers that she is dead. She's scared and confused by this new existence. But, when she realises she has been murdered, she's furious. She's determined to find her killer and get justice, bel...
+M | The Novice........................................ |      2021 | A college freshman joins her university's rowing team and undertakes an obsessive physical and psychological journey to make it to the top varsity boat, no matter the cost.
+M | Don't Look Up..................................... |      2021 | Two low-level astronomers must go on a giant media tour to warn humankind of an approaching comet that will destroy planet Earth.
+M | King Richard...................................... |      2021 | A look at how tennis superstars Venus and Serena Williams became who they are after the coaching from their father Richard.
+M | Past Lives........................................ |      2023 | Nora and Hae Sung, two deeply connected childhood friends, are wrested apart after Nora's family emigrates from South Korea. Twenty years later, they are reunited for one fateful week as they confront notions of love and destiny.
+M | Dune: Part Two.................................... |      2024 | Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he endeavors to prevent a terrible future. T...
+M | Deadpool and Wolverine............................ |      2024 | Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but instead recruits a variant of Wolverine to save his universe from extinction.
+M | Ghostlight........................................ |      2024 | When a construction worker unexpectedly joins a local theater's production of Romeo and Juliet, the drama onstage starts to mirror his own life.
+M | Avatar: The Way of Water.......................... |      2022 | Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.
+M | Inside Out 2...................................... |      2024 | A sequel that features Riley entering puberty and experiencing brand new, more complex emotions as a result. As Riley tries to adapt to her teenage years, her old emotions try to adapt to the possibility of being replaced.
+M | Kingdom of the Planet of the Apes................. |      2024 | Many years after the reign of Caesar, a young ape goes on a journey that will lead him to question everything he's been taught about the past and make choices that will define a future for apes and humans alike.
+M | The Menu.......................................... |      2022 | A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.
+M | Oppenheimer....................................... |      2023 | A dramatization of the life story of J. Robert Oppenheimer, the physicist who had a large hand in the development of the atomic bombs that brought an end to World War II.
+M | Furiosa: A Mad Max Saga........................... |      2024 | The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max.
+M | Terminator: Dark Fate............................. |      2019 | Sarah Connor and a hybrid cyborg human must protect a young girl from a newly modified liquid Terminator.
+M | Sound of Metal.................................... |      2019 | During a series of adrenaline-fueled gigs, itinerant punk-metal drummer Ruben begins to experience hearing loss. When a specialist tells him his condition will rapidly worsen, he thinks his music career - and with it his life - is over.
+M | The Banshees of Inisherin......................... |      2022 | Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, with alarming consequences for both of them.
+M | Riders of Justice................................. |      2020 | Markus goes home to his teenage daughter, Mathilde, when his wife dies in a train crash. All appears to be a tragic accident until a mathematics geek, who was also a fellow passenger on the train, and his two colleagues show up.
+M | Soul.............................................. |      2020 | Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true passion is jazz. But when he travels to another realm to help someone find their passion, he soon discovers what it means to have soul.
+M | The Call.......................................... |      2020 | Two people live in different times. Seo-Yeon lives in the present and Young-Sook lives in the past. One phone call connects the two, and their lives are changed irrevocably.
+M | Wolfwalkers....................................... |      2020 | A young apprentice hunter and her father journey to Ireland to help wipe out the last wolf pack. But everything changes when she befriends a free-spirited girl from a mysterious tribe rumored to transform into wolves by night.
+M | Boiling Point..................................... |      2022 | Enter the relentless pressure of a restaurant kitchen as a head chef wrangles his team on the busiest day of the year.
+M | All Quiet on the Western Front.................... |      2022 | A young German soldier's terrifying experiences and distress on the western front during World War I.
+M | Everything Everywhere All at Once................. |      2022 | A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led.
+M | The Substance..................................... |      2024 | A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily creates a younger, better version of herself.
+M | News of the World................................. |      2020 | A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago to her aunt and uncle against her will. They travel hundreds of miles and face grave dangers as they search for a place that either can call home.
+M | Avengers: Endgame................................. |      2019 | With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions.
+M | Guardians of the Galaxy Volume 3.................. |      2023 | Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.
+M | Poor Things....................................... |      2023 | An account of the fantastical evolution of Bella Baxter, a young woman brought back to life by the brilliant and unorthodox scientist Dr. Godwin Baxter.
+M | Dungeons and Dragons: Honor Among Thieves......... |      2023 | A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.
+M | The Holdovers..................................... |      2023 | A curmudgeonly instructor at a New England school remains on campus during Christmas break. He soon forms an unlikely bond with a brainy but damaged troublemaker, and with the school's cook, a woman who just lost a son in the Vietnam War.
+M | The Night House................................... |      2020 | A widow begins to uncover her recently deceased husband's disturbing secrets.
+M | The Fall Guy...................................... |      2024 | A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job. What could possibly go right?
+M | Dark Phoenix...................................... |      2019 | Jean Grey begins to develop incredible Dark powers that corrupt and turn her into a Dark Phoenix.
+M | Love and Monsters................................. |      2020 | Seven years after he survived the monster apocalypse, lovably hapless Joel leaves his cozy underground bunker behind on a quest to reunite with his high school sweetheart.
+M | The Last Duel..................................... |      2021 | The Knight Jean de Carrouges must settle the dispute over his wife Marguerite by challenging his former friend to a duel to the death.
+M | The Lord of the Rings: The War of the Rohirrim.... |      2024 | A sudden attack by Wulf, a clever and ruthless Dunlending lord seeking vengeance for the death of his father, forces Helm Hammerhand, the King of Rohan, and his people to make a daring last stand in the ancient stronghold of the Hornburg.
+M | Aftersun.......................................... |      2022 | Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories real and imagined fill the gaps between as she tries to reconcile the father she knew with the man she didn't.
+M | Encanto........................................... |      2021 | An extraordinary family, the Madrigals, live hidden in the mountains of Colombia, in a magical house called an Encanto. The magic of the Encanto has blessed every child in the family with a unique gift - every child except one, Mirabel.
+M | Star Wars: The Rise of Skywalker.................. |      2019 | The surviving Resistance faces the First Order once more in the final chapter of the Skywalker saga.
+M | Run............................................... |      2020 | Chloe, a teenager who is confined to a wheelchair, is homeschooled by her mother, Diane. Chloe soon becomes suspicious of her mother and begins to suspect that she may be harboring a dark secret.
+B | Don Quixote....................................... | ES | 1612 | The story follows a Hidalgo, Alonso Quixano, who proves that chivalry will in fact never die.
+B | A Tale of Two Cities.............................. | UK | 1859 | A historical novel, set in London and Paris at the begining and during the French Revolution.
+B | A Song of Ice and Fire............................ | US | 1997 | Nine noble families begin fighting for control over the mythical lands of Westeros.
+B | The Lord of the Rings............................. | UK | 1993 | Sauron has gathered to him all the Rings of Power, and he intends to use them to rule Middle-earth.
+B | Harry Potter...................................... | UK | 1997 | Harry realizes his life is far from ordinary.
+B | The Da Vinci Code................................. | US | 2003 | While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the night.
+B | The Catcher in the Rye............................ | US | 1951 | The story of a teen named Holden Caulfield and his struggle to find his voice in an adult world.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T13: Sort by Title (ALG)
+==========:==========:==========:==========:==========
+B | A Song of Ice and Fire............................ | US | 1997 | Nine noble families begin fighting for control over the mythical lands of Westeros.
+B | A Tale of Two Cities.............................. | UK | 1859 | A historical novel, set in London and Paris at the begining and during the French Revolution.
+M | Aftersun.......................................... |      2022 | Sophie reflects on the shared joy and private melancholy of a holiday she took with her father tw...
+S | Agatha All Along.................................. |  9 | 2024 | In Agatha All Along, the infamous Agatha Harkness finds herself down and out of power after a sus...
+M | All Quiet on the Western Front.................... |      2022 | A young German soldier's terrifying experiences and distress on the western front during World Wa...
+M | Avatar: The Way of Water.......................... |      2022 | Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar ...
+M | Avengers: Endgame................................. |      2019 | With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' ac...
+M | Boiling Point..................................... |      2022 | Enter the relentless pressure of a restaurant kitchen as a head chef wrangles his team on the bus...
+M | Dark Phoenix...................................... |      2019 | Jean Grey begins to develop incredible Dark powers that corrupt and turn her into a Dark Phoenix.
+M | Deadpool and Wolverine............................ |      2024 | Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but ...
+B | Don Quixote....................................... | ES | 1612 | The story follows a Hidalgo, Alonso Quixano, who proves that chivalry will in fact never die.
+M | Don't Look Up..................................... |      2021 | Two low-level astronomers must go on a giant media tour to warn humankind of an approaching comet...
+M | Dune: Part Two.................................... |      2024 | Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who d...
+M | Dungeons and Dragons: Honor Among Thieves......... |      2023 | A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost re...
+M | Encanto........................................... |      2021 | An extraordinary family, the Madrigals, live hidden in the mountains of Colombia, in a magical ho...
+M | Everything Everywhere All at Once................. |      2022 | A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save ...
+M | Furiosa: A Mad Max Saga........................... |      2024 | The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max.
+S | Game of Thrones................................... | 73 | 2011 | Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling...
+M | Ghostlight........................................ |      2024 | When a construction worker unexpectedly joins a local theater's production of Romeo and Juliet, t...
+M | Guardians of the Galaxy Volume 3.................. |      2023 | Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and on...
+B | Harry Potter...................................... | UK | 1997 | Harry realizes his life is far from ordinary.
+M | Inside Out 2...................................... |      2024 | A sequel that features Riley entering puberty and experiencing brand new, more complex emotions a...
+M | King Richard...................................... |      2021 | A look at how tennis superstars Venus and Serena Williams became who they are after the coaching ...
+M | Kingdom of the Planet of the Apes................. |      2024 | Many years after the reign of Caesar, a young ape goes on a journey that will lead him to questio...
+M | Love and Monsters................................. |      2020 | Seven years after he survived the monster apocalypse, lovably hapless Joel leaves his cozy underg...
+M | News of the World................................. |      2020 | A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago to her aunt and ...
+M | Oppenheimer....................................... |      2023 | A dramatization of the life story of J. Robert Oppenheimer, the physicist who had a large hand in...
+M | Past Lives........................................ |      2023 | Nora and Hae Sung, two deeply connected childhood friends, are wrested apart after Nora's family ...
+M | Poor Things....................................... |      2023 | An account of the fantastical evolution of Bella Baxter, a young woman brought back to life by th...
+M | Riders of Justice................................. |      2020 | Markus goes home to his teenage daughter, Mathilde, when his wife dies in a train crash. All appe...
+M | Run............................................... |      2020 | Chloe, a teenager who is confined to a wheelchair, is homeschooled by her mother, Diane. Chloe so...
+M | Soul.............................................. |      2020 | Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true pa...
+M | Sound of Metal.................................... |      2019 | During a series of adrenaline-fueled gigs, itinerant punk-metal drummer Ruben begins to experienc...
+M | Star Wars: The Rise of Skywalker.................. |      2019 | The surviving Resistance faces the First Order once more in the final chapter of the Skywalker saga.
+M | Terminator: Dark Fate............................. |      2019 | Sarah Connor and a hybrid cyborg human must protect a young girl from a newly modified liquid Ter...
+M | The Banshees of Inisherin......................... |      2022 | Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, wit...
+M | The Call.......................................... |      2020 | Two people live in different times. Seo-Yeon lives in the present and Young-Sook lives in the pas...
+B | The Catcher in the Rye............................ | US | 1951 | The story of a teen named Holden Caulfield and his struggle to find his voice in an adult world.
+B | The Da Vinci Code................................. | US | 2003 | While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the night.
+M | The Fall Guy...................................... |      2024 | A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, s...
+S | The Fall of the House of Usher.................... |  8 | 2023 | To secure their fortune - and future - two ruthless siblings build a family dynasty that begins t...
+M | The Holdovers..................................... |      2023 | A curmudgeonly instructor at a New England school remains on campus during Christmas break. He so...
+M | The Last Duel..................................... |      2021 | The Knight Jean de Carrouges must settle the dispute over his wife Marguerite by challenging his ...
+B | The Lord of the Rings............................. | UK | 1993 | Sauron has gathered to him all the Rings of Power, and he intends to use them to rule Middle-earth.
+M | The Lord of the Rings: The War of the Rohirrim.... |      2024 | A sudden attack by Wulf, a clever and ruthless Dunlending lord seeking vengeance for the death of...
+M | The Menu.......................................... |      2022 | A young couple travels to a remote island to eat at an exclusive restaurant where the chef has pr...
+M | The Night House................................... |      2020 | A widow begins to uncover her recently deceased husband's disturbing secrets.
+M | The Novice........................................ |      2021 | A college freshman joins her university's rowing team and undertakes an obsessive physical and ps...
+S | The Rising........................................ |  8 | 2022 | The Rising is the story of Neve Kelly, who discovers that she is dead. She's scared and confused ...
+M | The Substance..................................... |      2024 | A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily creat...
+M | Wolfwalkers....................................... |      2020 | A young apprentice hunter and her father journey to Ireland to help wipe out the last wolf pack. ...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T14: Sort by Year (ALG)
+==========:==========:==========:==========:==========
+B | Don Quixote....................................... | ES | 1612 | The story follows a Hidalgo, Alonso Quixano, who proves that chivalry will in fact never die.
+B | A Tale of Two Cities.............................. | UK | 1859 | A historical novel, set in London and Paris at the begining and during the French Revolution.
+B | The Catcher in the Rye............................ | US | 1951 | The story of a teen named Holden Caulfield and his struggle to find his voice in an adult world.
+B | The Lord of the Rings............................. | UK | 1993 | Sauron has gathered to him all the Rings of Power, and he intends to use them to rule Middle-earth.
+B | Harry Potter...................................... | UK | 1997 | Harry realizes his life is far from ordinary.
+B | A Song of Ice and Fire............................ | US | 1997 | Nine noble families begin fighting for control over the mythical lands of Westeros.
+B | The Da Vinci Code................................. | US | 2003 | While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the night.
+S | Game of Thrones................................... | 73 | 2011 | Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling...
+M | Terminator: Dark Fate............................. |      2019 | Sarah Connor and a hybrid cyborg human must protect a young girl from a newly modified liquid Ter...
+M | Sound of Metal.................................... |      2019 | During a series of adrenaline-fueled gigs, itinerant punk-metal drummer Ruben begins to experienc...
+M | Star Wars: The Rise of Skywalker.................. |      2019 | The surviving Resistance faces the First Order once more in the final chapter of the Skywalker saga.
+M | Dark Phoenix...................................... |      2019 | Jean Grey begins to develop incredible Dark powers that corrupt and turn her into a Dark Phoenix.
+M | Avengers: Endgame................................. |      2019 | With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' ac...
+M | Wolfwalkers....................................... |      2020 | A young apprentice hunter and her father journey to Ireland to help wipe out the last wolf pack. ...
+M | The Call.......................................... |      2020 | Two people live in different times. Seo-Yeon lives in the present and Young-Sook lives in the pas...
+M | Soul.............................................. |      2020 | Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true pa...
+M | Run............................................... |      2020 | Chloe, a teenager who is confined to a wheelchair, is homeschooled by her mother, Diane. Chloe so...
+M | Riders of Justice................................. |      2020 | Markus goes home to his teenage daughter, Mathilde, when his wife dies in a train crash. All appe...
+M | News of the World................................. |      2020 | A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago to her aunt and ...
+M | Love and Monsters................................. |      2020 | Seven years after he survived the monster apocalypse, lovably hapless Joel leaves his cozy underg...
+M | The Night House................................... |      2020 | A widow begins to uncover her recently deceased husband's disturbing secrets.
+M | King Richard...................................... |      2021 | A look at how tennis superstars Venus and Serena Williams became who they are after the coaching ...
+M | The Novice........................................ |      2021 | A college freshman joins her university's rowing team and undertakes an obsessive physical and ps...
+M | The Last Duel..................................... |      2021 | The Knight Jean de Carrouges must settle the dispute over his wife Marguerite by challenging his ...
+M | Encanto........................................... |      2021 | An extraordinary family, the Madrigals, live hidden in the mountains of Colombia, in a magical ho...
+M | Don't Look Up..................................... |      2021 | Two low-level astronomers must go on a giant media tour to warn humankind of an approaching comet...
+M | Aftersun.......................................... |      2022 | Sophie reflects on the shared joy and private melancholy of a holiday she took with her father tw...
+S | The Rising........................................ |  8 | 2022 | The Rising is the story of Neve Kelly, who discovers that she is dead. She's scared and confused ...
+M | The Menu.......................................... |      2022 | A young couple travels to a remote island to eat at an exclusive restaurant where the chef has pr...
+M | All Quiet on the Western Front.................... |      2022 | A young German soldier's terrifying experiences and distress on the western front during World Wa...
+M | Avatar: The Way of Water.......................... |      2022 | Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar ...
+M | Boiling Point..................................... |      2022 | Enter the relentless pressure of a restaurant kitchen as a head chef wrangles his team on the bus...
+M | The Banshees of Inisherin......................... |      2022 | Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, wit...
+M | Everything Everywhere All at Once................. |      2022 | A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save ...
+M | Dungeons and Dragons: Honor Among Thieves......... |      2023 | A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost re...
+M | Guardians of the Galaxy Volume 3.................. |      2023 | Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and on...
+M | Oppenheimer....................................... |      2023 | A dramatization of the life story of J. Robert Oppenheimer, the physicist who had a large hand in...
+M | Past Lives........................................ |      2023 | Nora and Hae Sung, two deeply connected childhood friends, are wrested apart after Nora's family ...
+M | The Holdovers..................................... |      2023 | A curmudgeonly instructor at a New England school remains on campus during Christmas break. He so...
+S | The Fall of the House of Usher.................... |  8 | 2023 | To secure their fortune - and future - two ruthless siblings build a family dynasty that begins t...
+M | Poor Things....................................... |      2023 | An account of the fantastical evolution of Bella Baxter, a young woman brought back to life by th...
+M | The Fall Guy...................................... |      2024 | A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, s...
+M | Furiosa: A Mad Max Saga........................... |      2024 | The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max.
+M | Deadpool and Wolverine............................ |      2024 | Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but ...
+M | The Lord of the Rings: The War of the Rohirrim.... |      2024 | A sudden attack by Wulf, a clever and ruthless Dunlending lord seeking vengeance for the death of...
+M | Ghostlight........................................ |      2024 | When a construction worker unexpectedly joins a local theater's production of Romeo and Juliet, t...
+S | Agatha All Along.................................. |  9 | 2024 | In Agatha All Along, the infamous Agatha Harkness finds herself down and out of power after a sus...
+M | Dune: Part Two.................................... |      2024 | Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who d...
+M | Kingdom of the Planet of the Apes................. |      2024 | Many years after the reign of Caesar, a young ape goes on a journey that will lead him to questio...
+M | The Substance..................................... |      2024 | A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily creat...
+M | Inside Out 2...................................... |      2024 | A sequel that features Riley entering puberty and experiencing brand new, more complex emotions a...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T15: Average Episode Length (ALG)
+==========:==========:==========:==========:==========
+Agatha All Along [2024]
+-----------------------
+    In Agatha All Along, the infamous Agatha Harkness finds herself down and out of power after a suspic
+    ious goth Teen helps break her free from a distorted spell. Her interest is piqued when he begs her 
+    to take him on the legendary Witches' Road, a magical gauntlet of trials that, if survived, rewards 
+    a witch with what they're missing. Together, Agatha and this mysterious Teen pull together a despera
+    te coven, and set off down, down, down The Road...
+    S01E06 "Familiar by Thy Side"
+            "Familiar Teen is much more than he seems, and his connections to the rest of the coven are 
+            revealed."
+    S01E01 "Seekest Thou the Road"
+            "In the small town Westview, Detective Agnes' murder case sends her down a road that changes
+             everything."
+    S01E03 "Through Many Miles of Tricks and Trials"
+            "The coven faces their first perilous trial on The Witches' Road."
+    S01E04 "If I Can't Reach You Let My Song Teach You"
+            "The coven faces their second trial on The Witches' Road."
+    S01E08 "Follow Me My Friend To Glory at the End"
+            "The end of The Road."
+    S01E09 "Maiden Mother Crone"
+            "The truth of Agatha Harkness and The Witches' Road."
+    S01E07 "Death's Hand in Mine"
+            "Those remaining suffer the hand they are dealt in the next trial."
+    S01E05 "Darkest Hour__COMMA__ Wake Thy Power"
+            "With enemies closing in, the coven flees under the light of a blood moon to the next ghastl
+            y trial."
+    S01E02 "Circle Sewn with Fate Unlock Thy Hidden Gate"
+            "With old foes in hot pursuit, Agatha and Teen gather a desperate coven to walk The Witches'
+             Road."
+-----------------------
+Average size of an episode [39] minutes.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T16: Get Long Episodes (ALG)
+==========:==========:==========:==========:==========
+Episodes of 'Game of Thrones' of at least 60 minutes:
+- "Winter is Coming"
+- "Valar Morghulis"
+- "Mhysa"
+- "The Children"
+- "Hardhome"
+- "Mother's Mercy"
+- "The Winds of Winter"
+- "The Queen's Justice"
+- "Beyond the Wall"
+- "The Dragon and the Wolf"
+- "The Long Night"
+- "The Last of the Starks"
+- "The Bells"
+- "The Iron Throne"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T17: Print Whole Collection
+==========:==========:==========:==========:==========
+Don Quixote [1612] [Miguel de Cervantes] [ES] [9.99]
+------------------
+    The story follows a Hidalgo, Alonso Quixano, who proves that chivalry will in fa
+    ct never die.
+------------------
+A Tale of Two Cities [1859] [Charles Dickens] [UK] [12.32]
+---------------------------
+    A historical novel, set in London and Paris at the begining and during the Frenc
+    h Revolution.
+---------------------------
+The Catcher in the Rye [1951] [J.D. Salinger] [US] [12.21]
+-----------------------------
+    The story of a teen named Holden Caulfield and his struggle to find his voice in
+     an adult world.
+-----------------------------
+The Lord of the Rings [1993] [J.R.R. Tolkien] [UK] [21.11]
+----------------------------
+    Sauron has gathered to him all the Rings of Power, and he intends to use them to
+     rule Middle-earth.
+----------------------------
+Harry Potter [1997] [J.K. Rowling] [UK] [45.99]
+-------------------
+    Harry realizes his life is far from ordinary.
+-------------------
+A Song of Ice and Fire [1997] [George R.R. Martin] [US] [99.9]
+-----------------------------
+    Nine noble families begin fighting for control over the mythical lands of Wester
+    os.
+-----------------------------
+The Da Vinci Code [2003] [Dan Brown] [US] [7.88]
+------------------------
+    While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call i
+    n the night.
+------------------------
+Game of Thrones [2011]
+----------------------
+    Based on the bestselling book series A Song of Ice and Fire by George R.R. Marti
+    n, this sprawling drama is set in a world where summers span decades and winters
+     can last a lifetime. From the scheming south and the savage eastern lands, to t
+    he frozen north and ancient Wall that protects the realm from the mysterious dar
+    kness beyond, the powerful families of the Seven Kingdoms are locked in a battle
+     for the Iron Throne. This is a story of duplicity and treachery, nobility and h
+    onor, conquest and triumph. In the Game of Thrones, you either win or you die.
+    S01E01 "Winter is Coming"
+            "Lord Eddard Stark, ruler of the North, is summoned to court by his old 
+            friend, King Robert Baratheon, to serve as the King's Hand. Eddard reluc
+            tantly agrees after learning of a possible threat to the King's life. Ed
+            dard's bastard son Jon Snow must make a painful decision about his own f
+            uture, while in the distant east Viserys Targaryen plots to reclaim his 
+            father's throne, usurped by Robert, by selling his sister in marriage."
+    S01E02 "The Kingsroad"
+            "An incident on the Kingsroad threatens Eddard and Robert's friendship. 
+            Jon and Tyrion travel to the Wall, where they discover that the reality 
+            of the Night's Watch may not match the heroic image of it."
+    S01E03 "Lord Snow"
+            "Jon Snow attempts to find his place amongst the Night's Watch. Eddard a
+            nd his daughters arrive at King's Landing."
+    S01E04 "Cripples
+            Bastards, and Broken Things"         , "Tyrion stops at Winterfell on hi
+            s way home and gets a frosty reception from Robb Stark. Eddard's investi
+            gation into the death of his predecessor gets underway."
+    S01E05 "The Wolf and the Lion"
+            "Catelyn's actions on the road have repercussions for Eddard. Tyrion enj
+            oys the dubious hospitality of the Eyrie."
+    S01E06 "A Golden Crown"
+            "Viserys is increasingly frustrated by the lack of progress towards gain
+            ing his crown."
+    S01E07 "You Win or You Die"
+            "Eddard's investigations in King's Landing reach a climax and a dark sec
+            ret is revealed."
+    S01E08 "The Pointy End"
+            "Tyrion joins his father's army with unexpected allies. Events in King's
+             Landing take a turn for the worse as Arya's lessons are put to the test
+            ."
+    S01E09 "Baelor"
+            "Catelyn must negotiate with the irascible Lord Walder Frey."
+    S01E10 "Fire and Blood"
+            "Daenerys must realize her destiny. Jaime finds himself in an unfamiliar
+             predicament."
+    S02E01 "The North Remembers"
+            "War grips the continent of Westeros. As Tyrion Lannister tries to take 
+            his strong-willed nephew in hand in King's Landing, Stannis Baratheon la
+            unches his own campaign to take the Iron Throne with the help of a myste
+            rious priestess. In the east, Daenerys must lead her retinue through a d
+            esolate wasteland whilst beyond the Wall the Night's Watch seeks the aid
+             of a wildling."
+    S02E02 "The Night Lands"
+            "Stannis uses Ser Davos to seek out new allies for his war with the Lann
+            isters. On the road north, Arya confides in Gendry. Robb Stark sends The
+            on Greyjoy to win an alliance with his father and the fierce warriors of
+             the Iron Islands. Cersei and Tyrion clash on how to rule in King's Land
+            ing."
+    S02E03 "What is Dead May Never Die"
+            "Catelyn Stark treats with King Renly in the hope of winning an alliance
+            . Tyrion undertakes a complex plan in King's Landing to expose an enemy.
+             At Winterfell, Bran's dreams continue to trouble him."
+    S02E04 "Garden of Bones"
+            "Tyrion attempts to restrain Joffrey's cruelty. Catelyn attempts to brok
+            er a peace between Stannis and Renly. Daenerys and her followers arrive 
+            at the great city of Qarth and hope to find refuge there. Arya and Gendr
+            y arrive at Harrenhal, a great castle now under Lannister occupation."
+    S02E05 "The Ghost of Harrenhal"
+            "Confusion rages in the Stormlands in the wake of a devastating reversal
+            . Catelyn must flee with a new ally, whilst Littlefinger sees an opportu
+            nity in the chaos. Theon seeks to prove himself to his father in battle.
+             Arya receives a promise from the enigmatic Jaqen H'ghar. The Night's Wa
+            tch arrives at the Fist of the First Men. Daenerys Targaryen receives a 
+            marriage proposal."
+    S02E06 "The Old Gods and the New"
+            "Arya has a surprise visitor; Dany vows to take what is hers; Joffrey me
+            ets his subjects; Qhorin gives Jon a chance to prove himself."
+    S02E07 "A Man Without Honor"
+            "Jaime meets a relative; Theon hunts; Dany receives an invitation."
+    S02E08 "The Prince of Winterfell"
+            "Theon holds the fort; Arya calls in her debt with Jaqen; Robb is betray
+            ed; Stannis and Davos approach their destination."
+    S02E09 "Blackwater"
+            "A massive battle rages for control of King's Landing and the Iron Thron
+            e."
+    S02E10 "Valar Morghulis"
+            "Tyrion awakens to a changed situation. King Joffrey doles out rewards t
+            o his subjects. As Theon stirs his men to action, Luwin offers some fina
+            l advice. Brienne silences Jaime; Arya receives a gift from Jaqen; Dany 
+            goes to a strange place; Jon proves himself to Qhorin."
+    S03E01 "Valar Dohaeris"
+            "Jon is brought before Mance Rayder, the King Beyond the Wall, while the
+             Night's Watch survivors retreat south. In King's Landing, Tyrion asks f
+            or his reward. Littlefinger offers Sansa a way out. Cersei hosts a dinne
+            r for the royal family. Daenerys sails into Slaver's Bay."
+    S03E02 "Dark Wings
+            Dark Words"             , "Sansa says too much. Shae asks Tyrion for a f
+            avor. Jaime finds a way to pass the time. Arya runs into the Brotherhood
+             Without Banners."
+    S03E03 "Walk of Punishment"
+            "Tyrion shoulders new responsibilities. Jon is taken to the Fist of the 
+            First Men. Daenerys meets with the slavers. Jaime strikes a deal with hi
+            s captors."
+    S03E04 "And Now His Watch is Ended"
+            "The Night's Watch takes stock. Varys meets his better. Arya is taken to
+             the commander of the Brotherhood. Daenerys exchanges a chain for a Whip
+            ."
+    S03E05 "Kissed by Fire"
+            "The Hound is judged by the gods; Jaime is judged by men. Jon proves him
+            self; Robb is betrayed. Tyrion learns the cost of weddings."
+    S03E06 "The Climb"
+            "Tywin plans strategic unions for the Lannisters. Melisandre visits the 
+            Riverlands. Robb weighs a compromise to repair his alliance with House F
+            rey. Roose Bolton decides what to do with Jaime Lannister. Jon, Ygritte 
+            and the Wildlings face a daunting climb."
+    S03E07 "The Bear and the Maiden Fair"
+            "Daenerys exchanges gifts with a slave lord outside Yunkai. As Sansa fre
+            ts about her prospects, Shae chafes at Tyrion's new situation. Tywin cou
+            nsels the king, and Melisandre reveals a secret to Gendry. Brienne faces
+             a formidable foe in Harrenhal."
+    S03E08 "Second Sons"
+            "King's Landing hosts a wedding, and Tyrion and Sansa spend the night to
+            gether. Daenerys meets the Titan's Bastard. Davos demands proof from Mel
+            isandre. Sam and Gilly meet an older Gentleman."
+    S03E09 "The Rains of Castamere"
+            "Robb presents himself to Walder Frey, and Edmure meets his bride. Jon f
+            aces his harshest test yet. Bran discovers a new gift. Daario and Jorah 
+            debate how to take Yunkai. House Frey joins with House Tully."
+    S03E10 "Mhysa"
+            "Joffrey challenges Tywin. Bran tells a ghost story. In Dragonstone, mer
+            cy comes from strange quarters. Daenerys waits to see if she is a conque
+            ror or a liberator."
+    S04E01 "Two Swords"
+            "Tyrion welcomes a guest to King's Landing. At Castle Black, Jon Snow fi
+            nds himself unwelcome. Dany is pointed to Meereen, the mother of all sla
+            ve cities. Arya runs into an old friend."
+    S04E02 "The Lion and the Rose"
+            "Tyrion lends Jaime a hand. Joffrey and Margaery host a breakfast. At Dr
+            agonstone, Stannis loses patience with Davos. Ramsay finds a purpose for
+             his pet. North of the Wall, Bran sees where they must go."
+    S04E03 "Breaker of Chains"
+            "Tyrion ponders his options. Tywin extends an olive branch. Sam realizes
+             Castle Black isn't safe, and Jon proposes a bold plan. The Hound teache
+            s Arya the way things are. Dany chooses her Champion."
+    S04E04 "Oathkeeper"
+            "Dany balances justice and mercy. Jaime tasks Brienne with his honor. Jo
+            n secures volunteers while Bran, Jojen, Meera and Hodor stumble on shelt
+            er."
+    S04E05 "First of His Name"
+            "Cersei and Tywin plot the Crown's next move. Dany discusses future plan
+            s. Jon embarks on a new mission."
+    S04E06 "The Laws of Gods and Men"
+            "Stannis and Davos set sail with a new strategy. Dany meets with supplic
+            ants. Tyrion faces down his father in the throne room."
+    S04E07 "Mockingbird"
+            "Tyrion enlists an unlikely ally. Daario entreats Dany to allow him to d
+            o what he does best. Jon's warnings about the Wall's vulnerability fall 
+            on deaf ears. Brienne follows a new lead on the road with Pod."
+    S04E08 "The Mountain and the Viper"
+            "Mole's Town receives unexpected visitors. Littlefinger's motives are qu
+            estioned. Ramsay attempts to prove himself to his father. Tyrion's fate 
+            is decided."
+    S04E09 "The Watchers on the Wall"
+            "Jon Snow and the rest of the Night's Watch face the biggest challenge t
+            o the Wall yet."
+    S04E10 "The Children"
+            "An unexpected arrival north of the Wall changes circumstances. Dany is 
+            forced to face harsh realities. Bran learns more of his destiny. Tyrion 
+            sees the truth of his situation."
+    S05E01 "The Wars to Come"
+            "Varys discusses a conspiracy with Tyrion; Daenerys' rule faces a new th
+            reat; Jon finds himself between two kings; and Cersei and Jaime try to m
+            ove on from Tywin's demise."
+    S05E02 "The House of Black and White"
+            "Arya arrives in Braavos; Brienne and Podrick find danger while travelin
+            g; Cersei worries about Myrcella in Dorne when Ellaria Sand seeks reveng
+            e for Oberyn's death; Jon is tempted by Stannis."
+    S05E03 "High Sparrow"
+            "Cersei meets the High Sparrow after learning of a clergyman's embarrass
+            ing tale. Meanwhile, Davos talks to Jon about the future of Winterfell, 
+            where Ramsay Snow has just learned the identity of his future bride; Ary
+            a grows impatient doing menial tasks in the House of Black and White; an
+            d Tyrion searches for more comfortable surroundings on a long trip with 
+            Varys."
+    S05E04 "Sons of the Harpy"
+            "The Faith Militant grow increasingly aggressive. Jaime and Bronn head s
+            outh. Ellaria and the Sand Snakes vow vengeance."
+    S05E05 "Kill the Boy"
+            "Dany makes a difficult decision in Meereen. Jon recruits the help of an
+             unexpected ally. Brienne searches for Sansa. Theon remains under Ramsay
+            's control."
+    S05E06 "Unbowed
+            Unbent, Unbroken" , "Arya trains. Jorah and Tyrion run into slavers. Try
+            stane and Myrcella make plans. Jaime and Bronn reach their destination. 
+            The Sand Snakes attack."
+    S05E07 "The Gift"
+            "Jon prepares for conflict. Sansa tries to talk to Theon. Brienne waits 
+            for a sign. Stannis remains stubborn. Jaime attempts to reconnect with f
+            amily."
+    S05E08 "Hardhome"
+            "Arya makes progress in her training. Sansa confronts an old friend. Cer
+            sei struggles. Jon travels."
+    S05E09 "The Dance of Dragons"
+            "Stannis confronts a troubling decision. Jon returns to The Wall. Mace v
+            isits the Iron Bank. Arya encounters someone from her past. Dany relucta
+            ntly oversees a traditional celebration of athleticism."
+    S05E10 "Mother's Mercy"
+            "Cersei seeks forgiveness; Jon faces a new challenge; Arya plots to cros
+            s a name off her list; Tyrion sees a familiar face; and Daenerys finds h
+            erself surrounded by strangers."
+    S06E01 "The Red Woman"
+            "Jon Snow is dead. Daenerys meets a strong man. Cersei sees her daughter
+             again."
+    S06E02 "Home"
+            "Bran trains with the Three-Eyed Raven. In King's Landing, Jaime advises
+             Tommen. Tyrion demands good news, but has to make his own. At Castle Bl
+            ack, the Night's Watch stands behind Thorne. Ramsay Bolton proposes a pl
+            an, and Balon Greyjoy entertains other proposals."
+    S06E03 "Oathbreaker"
+            "Daenerys meets her future. Bran meets the past. Tommen confronts the Hi
+            gh Sparrow. Arya trains to be No One. Varys finds an answer. Ramsay gets
+             a gift."
+    S06E04 "Book of the Stranger"
+            "Tyrion strikes a deal. Jorah and Daario undertake a difficult task. Jai
+            me and Cersei try to improve their situation."
+    S06E05 "The Door"
+            "Tyrion seeks a strange ally. Bran learns a great deal. Brienne goes on 
+            a mission. Arya is given a chance to prove herself."
+    S06E06 "Blood of My Blood"
+            "An old foe comes back into the picture. Gilly meets Sam's family. Arya 
+            faces a difficult choice. Jaime faces off against the High Sparrow."
+    S06E07 "The Broken Man"
+            "The High Sparrow eyes another target. Jaime confronts a hero. Arya make
+            s a plan. The North is reminded."
+    S06E08 "No One"
+            "Jaime encounters a hero; the High Sparrow fixates on another prey; Arya
+             hatches a new plan; Yara and Theon plot their next move; Olenna and Cer
+            sei discuss their families' futures. While Jaime weighs his options, Cer
+            sei answers a request. Tyrion's plans bear fruit. Arya faces a new test.
+            "
+    S06E09 "Battle of the Bastards"
+            "Ramsay surprises his audience. Jon retaliates. Dany is true to her word
+            ."
+    S06E10 "The Winds of Winter"
+            "Ramsay surprises his audience. Jon retaliates. Dany is true to her word
+            ."
+    S07E01 "Dragonstone"
+            "Jon organizes the defense of the North. Cersei tries to even the odds. 
+            Daenerys comes home."
+    S07E02 "Stormborn"
+            "Daenerys receives an unexpected visitor. Jon faces a revolt. Tyrion pla
+            ns the conquest of Westeros."
+    S07E03 "The Queen's Justice"
+            "Daenerys holds court. Cersei returns a gift. Jaime learns from his mist
+            akes."
+    S07E04 "The Spoils of War"
+            "Arya gets to the final destination. Daenerys takes it upon herself to s
+            trike back."
+    S07E05 "Eastwatch"
+            "Daenerys demands loyalty from the surviving Lannister soldiers; Jon hee
+            ds Bran's warning about White Walkers on the move; Cersei vows to vanqui
+            sh anyone or anything that stands in her way."
+    S07E06 "Beyond the Wall"
+            "Jon's mission continues north of the wall, but the odds against his rag
+            ged band of misfits may be greater than he imagined."
+    S07E07 "The Dragon and the Wolf"
+            "Cersei sits on the Iron Throne; Daenerys sails across the Narrow Sea; J
+            on Snow is King in the North, and winter is finally here."
+    S08E01 "Winterfell"
+            "Arriving at Winterfell, Jon and Daenerys struggle to unite a divided No
+            rth. Jon gets some big news."
+    S08E02 "A Knight of the Seven Kingdoms"
+            "Jaime faces judgement and Winterfell prepares for the battle to come."
+    S08E03 "The Long Night"
+            "Winterfell fights the Army of the Dead."
+    S08E04 "The Last of the Starks"
+            "The survivors plan their next steps; Cersei makes a power move."
+    S08E05 "The Bells"
+            "Varys betrays his queen, and Daenerys brings her forces to King's Landi
+            ng."
+    S08E06 "The Iron Throne"
+            "In the aftermath of the devastating attack on King's Landing, Daenerys 
+            must face the survivors."
+----------------------
+Terminator: Dark Fate [2019]
+----------------------------
+    Sarah Connor and a hybrid cyborg human must protect a young girl from a newly mo
+    dified liquid Terminator.
+----------------------------
+Sound of Metal [2019]
+---------------------
+    During a series of adrenaline-fueled gigs, itinerant punk-metal drummer Ruben be
+    gins to experience hearing loss. When a specialist tells him his condition will 
+    rapidly worsen, he thinks his music career - and with it his life - is over.
+---------------------
+Star Wars: The Rise of Skywalker [2019]
+---------------------------------------
+    The surviving Resistance faces the First Order once more in the final chapter of
+     the Skywalker saga.
+---------------------------------------
+Dark Phoenix [2019]
+-------------------
+    Jean Grey begins to develop incredible Dark powers that corrupt and turn her int
+    o a Dark Phoenix.
+-------------------
+Avengers: Endgame [2019]
+------------------------
+    With the help of remaining allies, the Avengers assemble once more in order to r
+    everse Thanos' actions.
+------------------------
+Wolfwalkers [2020]
+------------------
+    A young apprentice hunter and her father journey to Ireland to help wipe out the
+     last wolf pack. But everything changes when she befriends a free-spirited girl 
+    from a mysterious tribe rumored to transform into wolves by night.
+------------------
+The Call [2020]
+---------------
+    Two people live in different times. Seo-Yeon lives in the present and Young-Sook
+     lives in the past. One phone call connects the two, and their lives are changed
+     irrevocably.
+---------------
+Soul [2020]
+-----------
+    Joe is a middle-school band teacher whose life hasn't quite gone the way he expe
+    cted. His true passion is jazz. But when he travels to another realm to help som
+    eone find their passion, he soon discovers what it means to have soul.
+-----------
+Run [2020]
+----------
+    Chloe, a teenager who is confined to a wheelchair, is homeschooled by her mother
+    , Diane. Chloe soon becomes suspicious of her mother and begins to suspect that 
+    she may be harboring a dark secret.
+----------
+Riders of Justice [2020]
+------------------------
+    Markus goes home to his teenage daughter, Mathilde, when his wife dies in a trai
+    n crash. All appears to be a tragic accident until a mathematics geek, who was a
+    lso a fellow passenger on the train, and his two colleagues show up.
+------------------------
+News of the World [2020]
+------------------------
+    A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago
+     to her aunt and uncle against her will. They travel hundreds of miles and face 
+    grave dangers as they search for a place that either can call home.
+------------------------
+Love and Monsters [2020]
+------------------------
+    Seven years after he survived the monster apocalypse, lovably hapless Joel leave
+    s his cozy underground bunker behind on a quest to reunite with his high school 
+    sweetheart.
+------------------------
+The Night House [2020]
+----------------------
+    A widow begins to uncover her recently deceased husband's disturbing secrets.
+----------------------
+King Richard [2021]
+-------------------
+    A look at how tennis superstars Venus and Serena Williams became who they are af
+    ter the coaching from their father Richard.
+-------------------
+The Novice [2021]
+-----------------
+    A college freshman joins her university's rowing team and undertakes an obsessiv
+    e physical and psychological journey to make it to the top varsity boat, no matt
+    er the cost.
+-----------------
+The Last Duel [2021]
+--------------------
+    The Knight Jean de Carrouges must settle the dispute over his wife Marguerite by
+     challenging his former friend to a duel to the death.
+--------------------
+Encanto [2021]
+--------------
+    An extraordinary family, the Madrigals, live hidden in the mountains of Colombia
+    , in a magical house called an Encanto. The magic of the Encanto has blessed eve
+    ry child in the family with a unique gift - every child except one, Mirabel.
+--------------
+Don't Look Up [2021]
+--------------------
+    Two low-level astronomers must go on a giant media tour to warn humankind of an 
+    approaching comet that will destroy planet Earth.
+--------------------
+Aftersun [2022]
+---------------
+    Sophie reflects on the shared joy and private melancholy of a holiday she took w
+    ith her father twenty years earlier. Memories real and imagined fill the gaps be
+    tween as she tries to reconcile the father she knew with the man she didn't.
+---------------
+The Rising [2022]
+-----------------
+    The Rising is the story of Neve Kelly, who discovers that she is dead. She's sca
+    red and confused by this new existence. But, when she realises she has been murd
+    ered, she's furious. She's determined to find her killer and get justice, believ
+    ing that it was someone she knew. Impulsive and restless, Neve regrets never lea
+    ving her isolated community. And, as she comes to terms with her abilities, she 
+    begins to destabilise the lives of those she left behind. Particularly her estra
+    nged father, Tom and her beloved mother Maria. Neve is a disruptive, unsettling 
+    hero who should not exist, and she needs to find her purpose. She takes us throu
+    gh the investigation into her death, going where the police can't. In the proces
+    s she uncovers deeply buried secrets and is forced to re-examine everything abou
+    t her life and the people she cared about. With nothing to lose but time, Neve w
+    ill push for the truth even when it hurts. Her return forces everyone around her
+     to change, confess, or start covering their tracks. But, it also reveals that t
+    here are others like her out there.
+    S01E02 Episode 2
+            "After a shocking revelation, Neve and her father Tom try to process her
+             new reality. Neve herself starts to follow her own murder investigation
+            ."
+    S01E04 Episode 4
+            "As Neve pursues a connection in the woods, a supernatural breakthrough 
+            leads to some disturbing revelations."
+    S01E06 Episode 6
+            "Budding relationships falter and old ones have the potential to rekindl
+            e as Neve and Alex fall out."
+    S01E08 Episode 8
+            "Everything comes to a head at Keaton Hall, and Neve and Alex must fight
+             their way back to each other. Series finale."
+    S01E07 Episode 7
+            "It's seven years earlier and the last day of Victoria Sand's life. She 
+            and a young Katie and Max surprise Daniel for his birthday."
+    S01E01 Episode 1
+            "Neve Kelly discovers that she is dead and understandably is scared and 
+            confused by this new stare, but when she realises she has been murdered,
+             she is furious. Determined to find her killer and get justice, she take
+            s advantage of her new supernatural abilities to go where the police can
+            't and investigate her own death."
+    S01E03 Episode 3
+            "Suspicions grow regarding Neve's ex-boyfriend Joseph and what part he m
+            ay have had to play in her death. The family attend the vigil for Neve, 
+            whilst Alex questions Neve's stepsister."
+    S01E05 Episode 5
+            "Terrified, and sure she knows who her killer is, Neve seeks help from A
+            lex, whose mother and father are beginning to show concern."
+-----------------
+The Menu [2022]
+---------------
+    A young couple travels to a remote island to eat at an exclusive restaurant wher
+    e the chef has prepared a lavish menu, with some shocking surprises.
+---------------
+All Quiet on the Western Front [2022]
+-------------------------------------
+    A young German soldier's terrifying experiences and distress on the western fron
+    t during World War I.
+-------------------------------------
+Avatar: The Way of Water [2022]
+-------------------------------
+    Jake Sully lives with his newfound family formed on the extrasolar moon Pandora.
+     Once a familiar threat returns to finish what was previously started, Jake must
+     work with Neytiri and the army of the Na'vi race to protect their home.
+-------------------------------
+Boiling Point [2022]
+--------------------
+    Enter the relentless pressure of a restaurant kitchen as a head chef wrangles hi
+    s team on the busiest day of the year.
+--------------------
+The Banshees of Inisherin [2022]
+--------------------------------
+    Two lifelong friends find themselves at an impasse when one abruptly ends their 
+    relationship, with alarming consequences for both of them.
+--------------------------------
+Everything Everywhere All at Once [2022]
+----------------------------------------
+    A middle-aged Chinese immigrant is swept up into an insane adventure in which sh
+    e alone can save existence by exploring other universes and connecting with the 
+    lives she could have led.
+----------------------------------------
+Dungeons and Dragons: Honor Among Thieves [2023]
+------------------------------------------------
+    A charming thief and a band of unlikely adventurers embark on an epic quest to r
+    etrieve a lost relic, but things go dangerously awry when they run afoul of the 
+    wrong people.
+------------------------------------------------
+Guardians of the Galaxy Volume 3 [2023]
+---------------------------------------
+    Still reeling from the loss of Gamora, Peter Quill rallies his team to defend th
+    e universe and one of their own - a mission that could mean the end of the Guard
+    ians if not successful.
+---------------------------------------
+Oppenheimer [2023]
+------------------
+    A dramatization of the life story of J. Robert Oppenheimer, the physicist who ha
+    d a large hand in the development of the atomic bombs that brought an end to Wor
+    ld War II.
+------------------
+Past Lives [2023]
+-----------------
+    Nora and Hae Sung, two deeply connected childhood friends, are wrested apart aft
+    er Nora's family emigrates from South Korea. Twenty years later, they are reunit
+    ed for one fateful week as they confront notions of love and destiny.
+-----------------
+The Holdovers [2023]
+--------------------
+    A curmudgeonly instructor at a New England school remains on campus during Chris
+    tmas break. He soon forms an unlikely bond with a brainy but damaged troublemake
+    r, and with the school's cook, a woman who just lost a son in the Vietnam War.
+--------------------
+The Fall of the House of Usher [2023]
+-------------------------------------
+    To secure their fortune - and future - two ruthless siblings build a family dyna
+    sty that begins to crumble when their heirs mysteriously die, one by one.
+    S01E07 "The Pit and the Pendulum"
+            "A furious Frederick sets out to handle unfinished business. Madeline re
+            ceives an ominous message at an old haunt. Dupin grows wary of Roderick'
+            s motives."
+    S01E01 "A Midnight Dreary"
+            "A wealthy CEO faces a criminal investigation amid tragedy, trauma - and
+             a supernatural threat. The Usher family learns an informant lurks among
+             them."
+    S01E08 "The Raven"
+            "In 1980, Roderick and Madeline seize a chance to cement their fortune -
+             for a price. Decades later, the remaining Ushers reckon with the conseq
+            uences."
+    S01E03 "Murder in the Rue Morgue"
+            "In charge of the Ushers' publicity, Camille conspires to spin controver
+            sy in her family's favor and expose the grim details of her sister's exp
+            eriments."
+    S01E04 "The Black Cat"
+            "Leo adopts a black cat who soon brings evil - and a mysterious woman - 
+            into his home, while Roderick struggles with terrifying hallucinations."
+    S01E02 "The Masque of the Red Death"
+            "Motivated by money and revenge, Perry hosts an exclusive masque-rave th
+            at takes a twisted turn. A young Roderick pitches a revolutionary new op
+            ioid."
+    S01E06 "Goldbug"
+            "Pym digs up disturbing information on Verna. With her marriage on the d
+            ecline, Tamerlane hosts a turbulent product launch that shatters expecta
+            tions."
+    S01E05 "The Tell-Tale Heart"
+            "Victorine inches closer to testing her heart technology on a patient un
+            til tensions erupt between her and Alessandra. Dupin makes a chilling co
+            nfession."
+-------------------------------------
+Poor Things [2023]
+------------------
+    An account of the fantastical evolution of Bella Baxter, a young woman brought b
+    ack to life by the brilliant and unorthodox scientist Dr. Godwin Baxter.
+------------------
+The Fall Guy [2024]
+-------------------
+    A stuntman, fresh off an almost career-ending accident, has to track down a miss
+    ing movie star, solve a conspiracy and try to win back the love of his life whil
+    e still doing his day job. What could possibly go right?
+-------------------
+Furiosa: A Mad Max Saga [2024]
+------------------------------
+    The origin story of renegade warrior Furiosa before her encounter and teamup wit
+    h Mad Max.
+------------------------------
+Deadpool and Wolverine [2024]
+-----------------------------
+    Deadpool is offered a place in the Marvel Cinematic Universe by the Time Varianc
+    e Authority, but instead recruits a variant of Wolverine to save his universe fr
+    om extinction.
+-----------------------------
+The Lord of the Rings: The War of the Rohirrim [2024]
+-----------------------------------------------------
+    A sudden attack by Wulf, a clever and ruthless Dunlending lord seeking vengeance
+     for the death of his father, forces Helm Hammerhand, the King of Rohan, and his
+     people to make a daring last stand in the ancient stronghold of the Hornburg.
+-----------------------------------------------------
+Ghostlight [2024]
+-----------------
+    When a construction worker unexpectedly joins a local theater's production of Ro
+    meo and Juliet, the drama onstage starts to mirror his own life.
+-----------------
+Agatha All Along [2024]
+-----------------------
+    In Agatha All Along, the infamous Agatha Harkness finds herself down and out of 
+    power after a suspicious goth Teen helps break her free from a distorted spell. 
+    Her interest is piqued when he begs her to take him on the legendary Witches' Ro
+    ad, a magical gauntlet of trials that, if survived, rewards a witch with what th
+    ey're missing. Together, Agatha and this mysterious Teen pull together a despera
+    te coven, and set off down, down, down The Road...
+    S01E06 "Familiar by Thy Side"
+            "Familiar Teen is much more than he seems, and his connections to the re
+            st of the coven are revealed."
+    S01E01 "Seekest Thou the Road"
+            "In the small town Westview, Detective Agnes' murder case sends her down
+             a road that changes everything."
+    S01E03 "Through Many Miles of Tricks and Trials"
+            "The coven faces their first perilous trial on The Witches' Road."
+    S01E04 "If I Can't Reach You Let My Song Teach You"
+            "The coven faces their second trial on The Witches' Road."
+    S01E08 "Follow Me My Friend To Glory at the End"
+            "The end of The Road."
+    S01E09 "Maiden Mother Crone"
+            "The truth of Agatha Harkness and The Witches' Road."
+    S01E07 "Death's Hand in Mine"
+            "Those remaining suffer the hand they are dealt in the next trial."
+    S01E05 "Darkest Hour__COMMA__ Wake Thy Power"
+            "With enemies closing in, the coven flees under the light of a blood moo
+            n to the next ghastly trial."
+    S01E02 "Circle Sewn with Fate Unlock Thy Hidden Gate"
+            "With old foes in hot pursuit, Agatha and Teen gather a desperate coven 
+            to walk The Witches' Road."
+-----------------------
+Dune: Part Two [2024]
+---------------------
+    Paul Atreides unites with the Fremen while on a warpath of revenge against the c
+    onspirators who destroyed his family. Facing a choice between the love of his li
+    fe and the fate of the universe, he endeavors to prevent a terrible future. The 
+    war begins.
+---------------------
+Kingdom of the Planet of the Apes [2024]
+----------------------------------------
+    Many years after the reign of Caesar, a young ape goes on a journey that will le
+    ad him to question everything he's been taught about the past and make choices t
+    hat will define a future for apes and humans alike.
+----------------------------------------
+The Substance [2024]
+--------------------
+    A fading celebrity takes a black-market drug: a cell-replicating substance that 
+    temporarily creates a younger, better version of herself.
+--------------------
+Inside Out 2 [2024]
+-------------------
+    A sequel that features Riley entering puberty and experiencing brand new, more c
+    omplex emotions as a result. As Riley tries to adapt to her teenage years, her o
+    ld emotions try to adapt to the possibility of being replaced.
+-------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
