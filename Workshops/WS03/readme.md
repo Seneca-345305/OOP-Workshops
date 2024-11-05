@@ -1,6 +1,6 @@
 # Workshop #3: Multimedia Management Application
 
-In this workshop, you will to create an application to manage movies and books. The information about different media items will be loaded in objects from files, and the object will be managed by collection types using STL collections and algorithms.
+In this workshop, you will create an application to manage movies and books. The information about different media items will be loaded in objects from files, and the object will be managed by collection types using STL collections and algorithms.
 
 
 ## Submission Policy
@@ -63,7 +63,7 @@ For simplicity reasons, this type will contain only public data-members and no m
 #### Public Members
 
 - `m_maxSummaryWidth` an integer in 2 bytes that will store the maximum width of text then printing the summary of a media item. By default, the width is 80.
-- `m_tableView` as a Boolean attribute; when `true`, print to screen the information about the media intems formated as a table. By default, this attribute is `false`.
+- `m_tableView` as a Boolean attribute; when `true`, print to screen the information about the media items formatted as a table. By default, this attribute is `false`.
 
 
 
@@ -104,46 +104,46 @@ This class will not offer any public constructors.
 - `void display(std::ostream& out) const override`: override this function to print the information about a single book. Use the following implementation:
 
   ```cpp
-	void display(std::ostream& out) const
-	{
-		if (g_settings.m_tableView)
-		{
-			out << "B | ";
-			out << std::left << std::setfill('.');
-			out << std::setw(50) << this->getTitle() << " | ";
-			out << std::right << std::setfill(' ');
-			out << std::setw(2) << this->m_country << " | ";
-			out << std::setw(4) << this->getYear() << " | ";
-			out << std::left;
-			if (g_settings.m_maxSummaryWidth > -1)
-			{
-				if (static_cast<short>(this->getSummary().size()) <= g_settings.m_maxSummaryWidth)
-					out << this->getSummary();
-				else
-					out << this->getSummary().substr(0, g_settings.m_maxSummaryWidth - 3) << "...";
-			}
-			else
-				out << this->getSummary();
-			out << std::endl;
-		}
-		else
-		{
-			size_t pos = 0;
-			out << this->getTitle() << " [" << this->getYear() << "] [";
-			out << m_author << "] [" << m_country << "] [" << m_price << "]\n";
-			out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << "" << '\n';
-			while (pos < this->getSummary().size())
-			{
-				out << "    " << this->getSummary().substr(pos, g_settings.m_maxSummaryWidth) << '\n';
-				pos += g_settings.m_maxSummaryWidth;
-			}
-			out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << ""
-				<< std::setfill(' ') << '\n';
-		}
-	}
+  void display(std::ostream& out) const
+  {
+    if (g_settings.m_tableView)
+    {
+      out << "B | ";
+      out << std::left << std::setfill('.');
+      out << std::setw(50) << this->getTitle() << " | ";
+      out << std::right << std::setfill(' ');
+      out << std::setw(2) << this->m_country << " | ";
+      out << std::setw(4) << this->getYear() << " | ";
+      out << std::left;
+      if (g_settings.m_maxSummaryWidth > -1)
+      {
+        if (static_cast<short>(this->getSummary().size()) <= g_settings.m_maxSummaryWidth)
+          out << this->getSummary();
+        else
+          out << this->getSummary().substr(0, g_settings.m_maxSummaryWidth - 3) << "...";
+      }
+      else
+        out << this->getSummary();
+      out << std::endl;
+    }
+    else
+    {
+      size_t pos = 0;
+      out << this->getTitle() << " [" << this->getYear() << "] [";
+      out << m_author << "] [" << m_country << "] [" << m_price << "]\n";
+      out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << "" << '\n';
+      while (pos < this->getSummary().size())
+      {
+        out << "    " << this->getSummary().substr(pos, g_settings.m_maxSummaryWidth) << '\n';
+        pos += g_settings.m_maxSummaryWidth;
+      }
+      out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << ""
+        << std::setfill(' ') << '\n';
+    }
+  }
   ```
 
-- `Book* createItem(const std::string& strBook)`: a class function that receives as parameter the representation of the book as a string and builds a dynamically-allocated object of type `Book` using the information from the string and returns it to the client. The parameter contains a single line of text extracted from the file `books.csv`. The format of the line is as following:
+- `Book* createItem(const std::string& strBook)`: a **class function** that receives as parameter the representation of the book as a string and builds a dynamically allocated object of type `Book` using the information from the string and returns it to the client. The parameter contains a single line of text extracted from the file `books.csv`. The format of the line is as following:
 
   ```txt
   AUTHOR,TITLE,COUNTRY,PRICE,YEAR,SUMMARY
@@ -189,44 +189,44 @@ This class will not offer any public constructors.
 - `void display(std::ostream& out) const override`: override this function to print the information about a single book. Use the following implementation:
 
   ```cpp
-	void display(std::ostream& out) const
-	{
-		if (g_settings.m_tableView)
-		{
-			out << "M | ";
-			out << std::left << std::setfill('.');
-			out << std::setw(50) << this->getTitle() << " | ";
-			out << std::right << std::setfill(' ');
-			out << std::setw(9) << this->getYear() << " | ";
-			out << std::left;
-			if (g_settings.m_maxSummaryWidth > -1)
-			{
-				if (static_cast<short>(this->getSummary().size()) <= g_settings.m_maxSummaryWidth)
-					out << this->getSummary();
-				else
-					out << this->getSummary().substr(0, g_settings.m_maxSummaryWidth - 3) << "...";
-			}
-			else
-				out << this->getSummary();
-			out << std::endl;
-		}
-		else
-		{
-			size_t pos = 0;
-			out << this->getTitle() << " [" << this->getYear() << "]\n";
-			out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << "" << '\n';
-			while (pos < this->getSummary().size())
-			{
-				out << "    " << this->getSummary().substr(pos, g_settings.m_maxSummaryWidth) << '\n';
-				pos += g_settings.m_maxSummaryWidth;
-			}
-			out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << ""
-				<< std::setfill(' ') << '\n';
-		}
-	}
+  void display(std::ostream& out) const
+  {
+    if (g_settings.m_tableView)
+    {
+      out << "M | ";
+      out << std::left << std::setfill('.');
+      out << std::setw(50) << this->getTitle() << " | ";
+      out << std::right << std::setfill(' ');
+      out << std::setw(9) << this->getYear() << " | ";
+      out << std::left;
+      if (g_settings.m_maxSummaryWidth > -1)
+      {
+        if (static_cast<short>(this->getSummary().size()) <= g_settings.m_maxSummaryWidth)
+          out << this->getSummary();
+        else
+          out << this->getSummary().substr(0, g_settings.m_maxSummaryWidth - 3) << "...";
+      }
+      else
+        out << this->getSummary();
+      out << std::endl;
+    }
+    else
+    {
+      size_t pos = 0;
+      out << this->getTitle() << " [" << this->getYear() << "]\n";
+      out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << "" << '\n';
+      while (pos < this->getSummary().size())
+      {
+        out << "    " << this->getSummary().substr(pos, g_settings.m_maxSummaryWidth) << '\n';
+        pos += g_settings.m_maxSummaryWidth;
+      }
+      out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << ""
+        << std::setfill(' ') << '\n';
+    }
+  }
   ```
 
-- `Movie* createItem(const std::string& strMovie)`: a class function that receives as parameter the representation of the movie as a string and builds a dynamically-allocated object of type `Movie` using the information from the string and returns it to the client. The parameter contains a single line of text extracted from the file `movies.csv`. The format of the line is as following:
+- `Movie* createItem(const std::string& strMovie)`: a **class function** that receives as parameter the representation of the movie as a string and builds a dynamically allocated object of type `Movie` using the information from the string and returns it to the client. The parameter contains a single line of text extracted from the file `movies.csv`. The format of the line is as following:
 
   ```txt
   TITLE,YEAR,SUMMARY
@@ -255,11 +255,11 @@ This class will not offer any public constructors.
 
 Design and code a class named `TvShow` that stores the following information for a TV show (for each attribute, chose any type that you think is appropriate--you must be able to justify the decisions you have made):
 
-- **id**
+- `m_id`: the identifier of this show
 - **title** (inherited)
 - **the year of release** (inherited)
 - **the summary** (inherited)
-- a list of episodes
+- `m_episodes`: a list of episodes
 
 To represent an episode, use the following structure:
 
@@ -290,62 +290,62 @@ This class will not offer any public constructors.
 - `void display(std::ostream& out) const override`: override this function to print the information about a single book. Use the following implementation:
 
   ```cpp
-	void TvShow::display(std::ostream& out) const
-	{
-		if (g_settings.m_tableView)
-		{
-			out << "S | ";
-			out << std::left << std::setfill('.');
-			out << std::setw(50) << this->getTitle() << " | ";
-			out << std::right << std::setfill(' ');
-			out << std::setw(2) << this->m_episodes.size() << " | ";
-			out << std::setw(4) << this->getYear() << " | ";
-			out << std::left;
-			if (g_settings.m_maxSummaryWidth > -1)
-			{
-				if (static_cast<short>(this->getSummary().size()) <= g_settings.m_maxSummaryWidth)
-					out << this->getSummary();
-				else
-					out << this->getSummary().substr(0, g_settings.m_maxSummaryWidth - 3) << "...";
-			}
-			else
-				out << this->getSummary();
-			out << std::endl;
-		}
-		else
-		{
-			size_t pos = 0;
-			out << this->getTitle() << " [" << this->getYear() << "]\n";
-			out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << "" << '\n';
-			while (pos < this->getSummary().size())
-			{
-				out << "    " << this->getSummary().substr(pos, g_settings.m_maxSummaryWidth) << '\n';
-				pos += g_settings.m_maxSummaryWidth;
-			}
-			for (auto& item : m_episodes)
-			{
-				out << std::setfill('0') << std::right;
-				out << "    " << 'S' << std::setw(2) << item.m_season
-					<< 'E' << std::setw(2) << item.m_numberInSeason << ' ';
-				if (item.m_title != "")
-					out << item.m_title << '\n';
-				else
-					out << "Episode " << item.m_numberOverall << '\n';
+  void TvShow::display(std::ostream& out) const
+  {
+    if (g_settings.m_tableView)
+    {
+      out << "S | ";
+      out << std::left << std::setfill('.');
+      out << std::setw(50) << this->getTitle() << " | ";
+      out << std::right << std::setfill(' ');
+      out << std::setw(2) << this->m_episodes.size() << " | ";
+      out << std::setw(4) << this->getYear() << " | ";
+      out << std::left;
+      if (g_settings.m_maxSummaryWidth > -1)
+      {
+        if (static_cast<short>(this->getSummary().size()) <= g_settings.m_maxSummaryWidth)
+          out << this->getSummary();
+        else
+          out << this->getSummary().substr(0, g_settings.m_maxSummaryWidth - 3) << "...";
+      }
+      else
+        out << this->getSummary();
+      out << std::endl;
+    }
+    else
+    {
+      size_t pos = 0;
+      out << this->getTitle() << " [" << this->getYear() << "]\n";
+      out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << "" << '\n';
+      while (pos < this->getSummary().size())
+      {
+        out << "    " << this->getSummary().substr(pos, g_settings.m_maxSummaryWidth) << '\n';
+        pos += g_settings.m_maxSummaryWidth;
+      }
+      for (auto& item : m_episodes)
+      {
+        out << std::setfill('0') << std::right;
+        out << "    " << 'S' << std::setw(2) << item.m_season
+          << 'E' << std::setw(2) << item.m_numberInSeason << ' ';
+        if (item.m_title != "")
+          out << item.m_title << '\n';
+        else
+          out << "Episode " << item.m_numberOverall << '\n';
 
-				pos = 0;
-				while (pos < item.m_summary.size())
-				{
-					out << "            " << item.m_summary.substr(pos, g_settings.m_maxSummaryWidth - 8) << '\n';
-					pos += g_settings.m_maxSummaryWidth - 8;
-				}
-			}
-			out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << ""
-				<< std::setfill(' ') << '\n';
-		}
-	}
+        pos = 0;
+        while (pos < item.m_summary.size())
+        {
+          out << "            " << item.m_summary.substr(pos, g_settings.m_maxSummaryWidth - 8) << '\n';
+          pos += g_settings.m_maxSummaryWidth - 8;
+        }
+      }
+      out << std::setw(this->getTitle().size() + 7) << std::setfill('-') << ""
+        << std::setfill(' ') << '\n';
+    }
+  }
   ```
 
-- `Movie* createItem(const std::string& strShow)`: a class function that receives as parameter the representation of the TV Show as a string and builds a dynamically-allocated object of type `TvShow` using the information from the string and returns it to the client. The parameter contains a single line of text extracted from the file `tvShows.csv`. The format of the line is as following:
+- `TvShow* createItem(const std::string& strShow)`: a **class function** that receives as parameter the representation of the TV Show as a string and builds a dynamically allocated object of type `TvShow` using the information from the string and returns it to the client. The parameter contains a single line of text extracted from the file `tvShows.csv`. The format of the line is as following:
 
   ```txt
   ID,TITLE,YEAR,SUMMARY
@@ -364,7 +364,7 @@ This class will not offer any public constructors.
   - [std::stoi()](https://en.cppreference.com/w/cpp/string/basic_string/stol)
   - [std::stod()](https://en.cppreference.com/w/cpp/string/basic_string/stof)
 
-- `template<typename Collection_t> void addEpisode(Collection_t& col, const std::string& strEpisode)`: this function builds an episode with the information from the string, searches in the collection for a TV show with the specified id, and adds it to the list of episodes of the found show.  The string parameter contains a single line of text extracted from the file `episodes.csv`. The format of the line is as following:
+- `template<typename Collection_t> void addEpisode(Collection_t& col, const std::string& strEpisode)`: a **class function** that function builds an episode with the information from the string, searches in the collection for a TV show with the specified id, and adds it to the list of episodes of the found show.  The string parameter contains a single line of text extracted from the file `episodes.csv`. The format of the line is as following:
 
   ```txt
   ID,EPISODE_NUMBER,SEASON_NUMBER,EPISODE_IN_SEASON,AIR_DATE,LENGTH,TITLE,SUMMARY
@@ -376,15 +376,19 @@ This class will not offer any public constructors.
 
   If an episode is missing the season info, it's considered to be in season 1.
 
+  Assumptions about the template parameter `Collection_t`:
+  - has a member function called `size()` that returns the number of items in the collection
+  - overloads `operator[]` that receives an unsigned integer as parameter and returns an object of type `MediaInfo*`
+
 - `double getEpisodeAverageLength() const`: get the average length in seconds of an episode.
 
-  > [!IMPORTANT]
-  > This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
+> [!IMPORTANT]
+> This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
 
-- `std::list<std::string> getLongEpisodes() const`: create a list with episode names that are at leat 1 hour long.
+- `std::list<std::string> getLongEpisodes() const`: create a list with episode names that are at least 1 hour long.
 
-  > [!IMPORTANT]
-  > This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
+> [!IMPORTANT]
+> This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
 
 **Add any other private member that is required by your design!**
 
@@ -428,7 +432,7 @@ Add a `SpellChecker` class to your project. This class holds two parallel arrays
 ### `collection` Module
 
 
-Add a `collection` module to your project. The purpose of this module is to manage a collection media items. This class will take owneship of **ALL** `MediaItem` objects provided by the client and becomes responsible to manage their life. It is assumed, that all pointers received from the client store the address of **dynamically allocated** objects. When a new item is added to the collection, this class informs the client using a *callback function*.
+Add a `collection` module to your project. The purpose of this module is to manage a collection of media items. This class will take ownership of **ALL** `MediaItem` objects provided by the client and becomes responsible to manage their life. It is assumed, that all pointers received from the client store the address of **dynamically allocated** objects. When a new item is added to the collection, this class informs the client using a *callback function*.
 
 This class provides two overloads of the subscripting operator (`operator[]`) to access a stored item.
 
@@ -463,18 +467,18 @@ This class provides two overloads of the subscripting operator (`operator[]`) to
 
 - `MediaItem* operator[](const std::string& title) const`: returns the address of the item with the title `title`. If no such item exists, this function returns `nullptr`.
 
-  > [!IMPORTANT]
-  > This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
+> [!IMPORTANT]
+> This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
 
-- `void removeQuotes()`: for all the items stored in this collection, remove the quotation marks from the begining/end of the title and summary.
+- `void removeQuotes()`: for all the items stored in this collection, remove the quotation marks from the beginning/end of the title and summary.
 
-  > [!IMPORTANT]
-  > This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
+> [!IMPORTANT]
+> This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
 
 - `void sort(const std::string& field)`: sort in ascending order the collection of items based on the field specified as parameter.
 
-  > [!IMPORTANT]
-  > This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
+> [!IMPORTANT]
+> This is a `TASK` that you must accomplish using STL Algorithms and no manual loops. The STL algorithms used for this task should not be used for another task. Your lambda expressions should not capture anything from the context by reference.
 
   The results of this procedure will be different between various compilers. Check the provided sample output for your compiler.
 
@@ -487,7 +491,8 @@ This class provides two overloads of the subscripting operator (`operator[]`) to
 - overload the insertion operator to insert the content of a `Collection` object into an **ostream** object. Iterate over all elements in the collection and insert each one into the `ostream` object (do not add newlines).
 
 
-**:warning:Important: The class `Collection` should have no knowledge of the custom types you have defined: `Book`, `Movie`, `TvShow`, `SpellChecker`, and `Settings`.**
+> [!IMPORTANT]
+> The class `Collection` should have no knowledge of the custom types you have defined: `Book`, `Movie`, `TvShow`, `SpellChecker`, and `Settings`.
 
 
 
