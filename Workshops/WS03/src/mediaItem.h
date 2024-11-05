@@ -31,12 +31,12 @@ namespace seneca
 		std::string getSummary() const { return m_summary; }
 		void setSummary(const std::string& summary) { m_summary = summary; }
 		unsigned short getYear() const { return m_year; }
-		void setYear() { m_year = m_year; }
+		//void setYear(unsigned short year) { m_year = year; }
 
 		virtual void display(std::ostream& out = std::cout) const = 0;
 
-		template<typename T>
-		void fixSpelling(T& spellChecker)
+		template<typename Functor_t>
+		void fixSpelling(Functor_t& spellChecker)
 		{
 			spellChecker(m_title);
 			spellChecker(m_summary);
