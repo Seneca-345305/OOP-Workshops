@@ -1,0 +1,53 @@
+Command Line:
+--------------------------
+  1: ws
+  2: data_str.txt
+  3: data_num.txt
+--------------------------
+
+>>>  T1: Singleton
+==========:==========:==========:==========:==========
+[0xa87020] Database(const std::string&)
+[0xa87570] Database(const std::string&)
+Same database.
+Same database.
+Different database.
+Different database.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T2: Test Content of a String Database
+==========:==========:==========:==========:==========
+Ashleigh Barty earned $3,765,182
+Barbora Krejcikova earned $2,800,013
+Karolina Pliskova earned $2,061,970
+Unable to retrieve earnings for Leylah Fernandez
+Naomi Osaka earned $2,126,222
+Leylah Fernandez earned $786,772
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T3: Test Content of a Numeric Database
+==========:==========:==========:==========:==========
+Ashleigh Barty earned 3765182
+Barbora Krejcikova earned 2800013
+Karolina Pliskova earned 2061970
+Unable to retrieve earnings for Leylah Fernandez
+Naomi Osaka earned 2126222
+Leylah Fernandez earned 786772
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>  T4: Output File Content
+==========:==========:==========:==========:==========
+
+The content of the file [data_str.txt.bkp.txt]
+---------------------------------------------------------------------
+File size in bytes: [ -1 ]
+---------------------------------------------------------------------
+
+The content of the file [data_num.txt.bkp.txt]
+---------------------------------------------------------------------
+File size in bytes: [ -1 ]
+---------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[0xa87570] ~Database()
+[0xa87020] ~Database()
