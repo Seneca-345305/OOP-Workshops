@@ -1,0 +1,5 @@
+Cornel B. | 1-Room Home Office             | Office Chair|Desk|Bookcase|Bookcase|Filing Cabinet
+Chris S.  | Bedroom                        | Bed|Armchair|Nighttable|Dresser|Nighttable
+John M.   | Kids Bedroom                   | Bed|Bed|Bed|Bed|Nighttable|Nighttable|Dresser|Desk
+Hong H.   | 1-Room Office                  | Desk|Office Chair|Office Chair|Filing Cabinet|Filing Cabinet|Filing Cabinet|Bookcase
+Rania A.  | 2-Room Home Office and Bedroom | Desk|Desk|Office Chair|Bed|Office Chair|Office Chair|Nighttable|Armchair|Dresser

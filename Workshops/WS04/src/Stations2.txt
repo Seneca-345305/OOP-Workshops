@@ -1,0 +1,4 @@
+Filing Cabinet | 987654 |  5 | 3-drawer filing cabinet
+Office Chair   | 147852 | 20 | High-back carpet-rollers
+Bookcase       |    987 |  5 | 5-shelf open bookcase
+Desk           | 459214 |  2 | 6-foot worktable

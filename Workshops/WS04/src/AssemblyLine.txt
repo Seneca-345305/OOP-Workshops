@@ -1,0 +1,8 @@
+Nighttable|Desk
+Dresser|Armchair
+Filing Cabinet|Bookcase
+Bookcase
+Bed|Dresser
+Office Chair|Filing Cabinet
+Armchair|Nighttable
+Desk|Office Chair

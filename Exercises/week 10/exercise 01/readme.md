@@ -143,5 +143,3 @@ Create a **text** file named `reflect.txt` that contains your detailed descripti
 - was there any benefit from using binary files in this exercise?
 - why would be important to bind a function to its arguments, and how was it useful in this exercise?
 - the advantages of using multiple threads, and how did you accomplis multi-threading in this exercise?
-
-To avoid deductions, refer to code in your solution as examples to support your explanations.

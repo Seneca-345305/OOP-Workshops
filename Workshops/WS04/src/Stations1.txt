@@ -1,0 +1,4 @@
+Armchair,    654321,  10,  Upholstered Wing Chair
+Bed,         123456,   5,  Queen size bed with headboard
+Dresser,     56789,    7,  6-Drawer Unit
+Nighttable,  887,      5,  Nightstand with 2 drawers

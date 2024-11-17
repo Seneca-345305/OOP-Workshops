@@ -1,0 +1,226 @@
+Command Line: ms3 Stations1.txt Stations2.txt CustomerOrders.txt AssemblyLine.txt
+
+========================================
+=         Stations (summary)           =
+========================================
+001 | Armchair       | 654321 | 
+002 | Bed            | 123456 | 
+003 | Dresser        | 056789 | 
+004 | Nighttable     | 000887 | 
+005 | Filing Cabinet | 987654 | 
+006 | Office Chair   | 147852 | 
+007 | Bookcase       | 000987 | 
+008 | Desk           | 459214 | 
+
+
+========================================
+=          Stations (full)             =
+========================================
+001 | Armchair       | 654321 |   10 | Upholstered Wing Chair
+002 | Bed            | 123456 |    5 | Queen size bed with headboard
+003 | Dresser        | 056789 |    7 | 6-Drawer Unit
+004 | Nighttable     | 000887 |    5 | Nightstand with 2 drawers
+005 | Filing Cabinet | 987654 |    5 | 3-drawer filing cabinet
+006 | Office Chair   | 147852 |   20 | High-back carpet-rollers
+007 | Bookcase       | 000987 |    5 | 5-shelf open bookcase
+008 | Desk           | 459214 |    2 | 6-foot worktable
+
+
+========================================
+=          Manual Validation           =
+========================================
+getItemName(): Armchair
+getNextSerialNumber(): 654321
+getNextSerialNumber(): 654322
+getQuantity(): 10
+getQuantity(): 9
+
+
+========================================
+=                Orders                =
+========================================
+Cornel B. - 1-Room Home Office
+[000000] Office Chair                   - TO BE FILLED
+[000000] Desk                           - TO BE FILLED
+[000000] Bookcase                       - TO BE FILLED
+[000000] Bookcase                       - TO BE FILLED
+[000000] Filing Cabinet                 - TO BE FILLED
+Chris S. - Bedroom
+[000000] Bed                            - TO BE FILLED
+[000000] Armchair                       - TO BE FILLED
+[000000] Nighttable                     - TO BE FILLED
+[000000] Dresser                        - TO BE FILLED
+[000000] Nighttable                     - TO BE FILLED
+John M. - Kids Bedroom
+[000000] Bed                            - TO BE FILLED
+[000000] Bed                            - TO BE FILLED
+[000000] Bed                            - TO BE FILLED
+[000000] Bed                            - TO BE FILLED
+[000000] Nighttable                     - TO BE FILLED
+[000000] Nighttable                     - TO BE FILLED
+[000000] Dresser                        - TO BE FILLED
+[000000] Desk                           - TO BE FILLED
+Hong H. - 1-Room Office
+[000000] Desk                           - TO BE FILLED
+[000000] Office Chair                   - TO BE FILLED
+[000000] Office Chair                   - TO BE FILLED
+[000000] Filing Cabinet                 - TO BE FILLED
+[000000] Filing Cabinet                 - TO BE FILLED
+[000000] Filing Cabinet                 - TO BE FILLED
+[000000] Bookcase                       - TO BE FILLED
+Rania A. - 2-Room Home Office and Bedroom
+[000000] Desk                           - TO BE FILLED
+[000000] Desk                           - TO BE FILLED
+[000000] Office Chair                   - TO BE FILLED
+[000000] Bed                            - TO BE FILLED
+[000000] Office Chair                   - TO BE FILLED
+[000000] Office Chair                   - TO BE FILLED
+[000000] Nighttable                     - TO BE FILLED
+[000000] Armchair                       - TO BE FILLED
+[000000] Dresser                        - TO BE FILLED
+
+
+========================================
+=       Display Stations (loaded)      =
+========================================
+Nighttable --> Desk
+Dresser --> Armchair
+Filing Cabinet --> Bookcase
+Bookcase --> End of Line
+Bed --> Dresser
+Office Chair --> Filing Cabinet
+Armchair --> Nighttable
+Desk --> Office Chair
+
+
+========================================
+=      Display Stations (ordered)      =
+========================================
+Bed --> Dresser
+Dresser --> Armchair
+Armchair --> Nighttable
+Nighttable --> Desk
+Desk --> Office Chair
+Office Chair --> Filing Cabinet
+Filing Cabinet --> Bookcase
+Bookcase --> End of Line
+
+
+========================================
+=           Filling Orders             =
+========================================
+Line Manager Iteration: 1
+Line Manager Iteration: 2
+    Filled Chris S., Bedroom [Bed]
+    Filled Cornel B., 1-Room Home Office [Desk]
+Line Manager Iteration: 3
+    Filled John M., Kids Bedroom [Bed]
+    Filled Chris S., Bedroom [Dresser]
+    Filled Cornel B., 1-Room Home Office [Office Chair]
+Line Manager Iteration: 4
+    Filled John M., Kids Bedroom [Bed]
+    Filled Chris S., Bedroom [Armchair]
+    Filled Cornel B., 1-Room Home Office [Filing Cabinet]
+Line Manager Iteration: 5
+    Filled John M., Kids Bedroom [Bed]
+    Filled Chris S., Bedroom [Nighttable]
+    Filled Cornel B., 1-Room Home Office [Bookcase]
+Line Manager Iteration: 6
+    Filled John M., Kids Bedroom [Bed]
+    Filled Chris S., Bedroom [Nighttable]
+    Filled Cornel B., 1-Room Home Office [Bookcase]
+Line Manager Iteration: 7
+    Filled John M., Kids Bedroom [Dresser]
+Line Manager Iteration: 8
+    Unable to fill Rania A., 2-Room Home Office and Bedroom [Bed]
+    Filled John M., Kids Bedroom [Nighttable]
+Line Manager Iteration: 9
+    Filled Rania A., 2-Room Home Office and Bedroom [Dresser]
+    Filled John M., Kids Bedroom [Nighttable]
+Line Manager Iteration: 10
+    Filled Rania A., 2-Room Home Office and Bedroom [Armchair]
+    Filled John M., Kids Bedroom [Desk]
+Line Manager Iteration: 11
+    Filled Rania A., 2-Room Home Office and Bedroom [Nighttable]
+    Unable to fill Hong H., 1-Room Office [Desk]
+Line Manager Iteration: 12
+    Unable to fill Rania A., 2-Room Home Office and Bedroom [Desk]
+    Unable to fill Rania A., 2-Room Home Office and Bedroom [Desk]
+    Filled Hong H., 1-Room Office [Office Chair]
+Line Manager Iteration: 13
+    Filled Hong H., 1-Room Office [Office Chair]
+Line Manager Iteration: 14
+    Filled Rania A., 2-Room Home Office and Bedroom [Office Chair]
+    Filled Hong H., 1-Room Office [Filing Cabinet]
+Line Manager Iteration: 15
+    Filled Rania A., 2-Room Home Office and Bedroom [Office Chair]
+    Filled Hong H., 1-Room Office [Filing Cabinet]
+Line Manager Iteration: 16
+    Filled Rania A., 2-Room Home Office and Bedroom [Office Chair]
+    Filled Hong H., 1-Room Office [Filing Cabinet]
+Line Manager Iteration: 17
+    Filled Hong H., 1-Room Office [Bookcase]
+Line Manager Iteration: 18
+
+
+========================================
+=      Processed Orders (complete)     =
+========================================
+Cornel B. - 1-Room Home Office
+[147852] Office Chair                   - FILLED
+[459214] Desk                           - FILLED
+[000987] Bookcase                       - FILLED
+[000988] Bookcase                       - FILLED
+[987654] Filing Cabinet                 - FILLED
+Chris S. - Bedroom
+[123456] Bed                            - FILLED
+[654323] Armchair                       - FILLED
+[000887] Nighttable                     - FILLED
+[056789] Dresser                        - FILLED
+[000888] Nighttable                     - FILLED
+John M. - Kids Bedroom
+[123457] Bed                            - FILLED
+[123458] Bed                            - FILLED
+[123459] Bed                            - FILLED
+[123460] Bed                            - FILLED
+[000889] Nighttable                     - FILLED
+[000890] Nighttable                     - FILLED
+[056790] Dresser                        - FILLED
+[459215] Desk                           - FILLED
+
+
+========================================
+=     Processed Orders (incomplete)    =
+========================================
+Hong H. - 1-Room Office
+[000000] Desk                           - TO BE FILLED
+[147853] Office Chair                   - FILLED
+[147854] Office Chair                   - FILLED
+[987655] Filing Cabinet                 - FILLED
+[987656] Filing Cabinet                 - FILLED
+[987657] Filing Cabinet                 - FILLED
+[000989] Bookcase                       - FILLED
+Rania A. - 2-Room Home Office and Bedroom
+[000000] Desk                           - TO BE FILLED
+[000000] Desk                           - TO BE FILLED
+[147855] Office Chair                   - FILLED
+[000000] Bed                            - TO BE FILLED
+[147856] Office Chair                   - FILLED
+[147857] Office Chair                   - FILLED
+[000891] Nighttable                     - FILLED
+[654324] Armchair                       - FILLED
+[056791] Dresser                        - FILLED
+
+
+========================================
+=          Inventory (full)            =
+========================================
+001 | Armchair       | 654325 |    7 | Upholstered Wing Chair
+002 | Bed            | 123461 |    0 | Queen size bed with headboard
+003 | Dresser        | 056792 |    4 | 6-Drawer Unit
+004 | Nighttable     | 000892 |    0 | Nightstand with 2 drawers
+005 | Filing Cabinet | 987658 |    1 | 3-drawer filing cabinet
+006 | Office Chair   | 147858 |   14 | High-back carpet-rollers
+007 | Bookcase       | 000990 |    2 | 5-shelf open bookcase
+008 | Desk           | 459216 |    0 | 6-foot worktable
+
